@@ -67,7 +67,7 @@ cargotable {
 /*Clipper*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_clipper_default_running_empty, "gfx\clipper\default_running_empty.png") {
+spriteset(spriteset_clipper_default_running_empty, "gfx/clipper/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5,	36,	99,	-18,	-60 ]
 	[ 50,	5,	89,	87,	-58,	-50 ]
@@ -79,7 +79,7 @@ spriteset(spriteset_clipper_default_running_empty, "gfx\clipper\default_running_
 	[ 650, 	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_clipper_default_still_empty, "gfx\clipper\default_still_empty.png"){
+spriteset(spriteset_clipper_default_still_empty, "gfx/clipper/default_still_empty.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-60 ]
 	[ 50,	5,	89,	87,	-58,	-50 ]
@@ -91,7 +91,7 @@ spriteset(spriteset_clipper_default_still_empty, "gfx\clipper\default_still_empt
 	[ 650, 	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_clipper_default_running_full, "gfx\clipper\default_running_full.png"){
+spriteset(spriteset_clipper_default_running_full, "gfx/clipper/default_running_full.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-59 ]
 	[ 50,	5,	89,	87,	-58,	-49 ]
@@ -103,7 +103,7 @@ spriteset(spriteset_clipper_default_running_full, "gfx\clipper\default_running_f
 	[ 650, 	5,	90,	87,	-35,	-49 ]
 }
 
-spriteset(spriteset_clipper_default_still_full, "gfx\clipper\default_still_full.png"){
+spriteset(spriteset_clipper_default_still_full, "gfx/clipper/default_still_full.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-59 ]
 	[ 50,	5,	89,	87,	-58,	-49 ]
@@ -116,7 +116,7 @@ spriteset(spriteset_clipper_default_still_full, "gfx\clipper\default_still_full.
 
 }
 
-spriteset(spriteset_clipper_pass_running_empty, "gfx\clipper\pass_running_empty.png") {
+spriteset(spriteset_clipper_pass_running_empty, "gfx/clipper/pass_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5,	36,	99,	-18,	-60 ]
 	[ 50,	5,	89,	87,	-58,	-50 ]
@@ -128,7 +128,7 @@ spriteset(spriteset_clipper_pass_running_empty, "gfx\clipper\pass_running_empty.
 	[ 650, 	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_clipper_pass_still_empty, "gfx\clipper\pass_still_empty.png"){
+spriteset(spriteset_clipper_pass_still_empty, "gfx/clipper/pass_still_empty.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-60 ]
 	[ 50,	5,	89,	87,	-58,	-50 ]
@@ -140,7 +140,7 @@ spriteset(spriteset_clipper_pass_still_empty, "gfx\clipper\pass_still_empty.png"
 	[ 650, 	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_clipper_pass_running_full, "gfx\clipper\pass_running_full.png"){
+spriteset(spriteset_clipper_pass_running_full, "gfx/clipper/pass_running_full.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-59 ]
 	[ 50,	5,	89,	87,	-58,	-49 ]
@@ -152,7 +152,7 @@ spriteset(spriteset_clipper_pass_running_full, "gfx\clipper\pass_running_full.pn
 	[ 650, 	5,	90,	87,	-35,	-49 ]
 }
 
-spriteset(spriteset_clipper_pass_still_full, "gfx\clipper\pass_still_full.png"){
+spriteset(spriteset_clipper_pass_still_full, "gfx/clipper/pass_still_full.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-59 ]
 	[ 50,	5,	89,	87,	-58,	-49 ]
@@ -166,7 +166,7 @@ spriteset(spriteset_clipper_pass_still_full, "gfx\clipper\pass_still_full.png"){
 }
 
 
-spriteset(spriteset_clipper_bulk_running_empty, "gfx\clipper\bulk_running_empty.png") {
+spriteset(spriteset_clipper_bulk_running_empty, "gfx/clipper/bulk_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5,	36,	99,	-18,	-60 ]
 	[ 50,	5,	89,	87,	-58,	-50 ]
@@ -178,7 +178,7 @@ spriteset(spriteset_clipper_bulk_running_empty, "gfx\clipper\bulk_running_empty.
 	[ 650, 	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_clipper_bulk_still_empty, "gfx\clipper\bulk_still_empty.png"){
+spriteset(spriteset_clipper_bulk_still_empty, "gfx/clipper/bulk_still_empty.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-60 ]
 	[ 50,	5,	89,	87,	-58,	-50 ]
@@ -190,7 +190,7 @@ spriteset(spriteset_clipper_bulk_still_empty, "gfx\clipper\bulk_still_empty.png"
 	[ 650, 	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_clipper_bulk_running_full, "gfx\clipper\bulk_running_full.png"){
+spriteset(spriteset_clipper_bulk_running_full, "gfx/clipper/bulk_running_full.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-59 ]
 	[ 50,	5,	89,	87,	-58,	-49 ]
@@ -202,7 +202,7 @@ spriteset(spriteset_clipper_bulk_running_full, "gfx\clipper\bulk_running_full.pn
 	[ 650, 	5,	90,	87,	-35,	-49 ]
 }
 
-spriteset(spriteset_clipper_bulk_still_full, "gfx\clipper\bulk_still_full.png"){
+spriteset(spriteset_clipper_bulk_still_full, "gfx/clipper/bulk_still_full.png"){
 	
 	[ 5, 	5,	36,	99,	-18,	-59 ]
 	[ 50,	5,	89,	87,	-58,	-49 ]
@@ -215,26 +215,26 @@ spriteset(spriteset_clipper_bulk_still_full, "gfx\clipper\bulk_still_full.png"){
 
 }
 
-spriteset(spriteset_clipper_buymenu,"gfx\clipper\default_still_empty.png"){
+spriteset(spriteset_clipper_buymenu,"gfx/clipper/default_still_empty.png"){
 /*	[ 552,	87,	88,	15,	-150,	-10 ]*/
 	[ 552,	87,	88,	15,	-44,	-10 ]
 }
 
-spriteset(spriteset_clipper_prev,"gfx\clipper\default_still_empty.png"){
+spriteset(spriteset_clipper_prev,"gfx/clipper/default_still_empty.png"){
 	[ 552,	87,	88,	15,	-44,	-10 ]
 }
 
-spriteset(spriteset_clipper_default_depot,"gfx\clipper\default_still_empty.png"){
+spriteset(spriteset_clipper_default_depot,"gfx/clipper/default_still_empty.png"){
 /*	[ 552,	87,	88,	15,	-150,	-10 ]*/
 	[ 552,	87,	88,	15,	-44,	-10 ]
 }
 
-spriteset(spriteset_clipper_bulk_depot,"gfx\clipper\bulk_still_empty.png"){
+spriteset(spriteset_clipper_bulk_depot,"gfx/clipper/bulk_still_empty.png"){
 /*	[ 552,	87,	88,	15,	-150,	-10 ]*/
 	[ 552,	87,	88,	15,	-44,	-10 ]
 }
 
-spriteset(spriteset_clipper_pass_depot,"gfx\clipper\pass_still_empty.png"){
+spriteset(spriteset_clipper_pass_depot,"gfx/clipper/pass_still_empty.png"){
 /*	[ 552,	87,	88,	15,	-150,	-10 ]*/
 	[ 552,	87,	88,	15,	-44,	-10 ]
 }
@@ -349,7 +349,7 @@ item (FEAT_SHIPS , item_clipper) {
 		is_refittable : 1;
 		default_cargo_type : GOOD;
 		cargo_capacity : 160;
-		sound_effect : sound("sound\bell Clipper.wav");
+		sound_effect : sound("sound/bell Clipper.wav");
 	}
 	graphics {
 		purchase: switch_clipper_default_purchase;
@@ -376,7 +376,7 @@ item (FEAT_SHIPS , item_clipper) {
 /*Paddle steamer*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_paddles_default_running_empty, "gfx\paddles\default_running_empty.png") {
+spriteset(spriteset_paddles_default_running_empty, "gfx/paddles/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5,	31,	76,	-33,	-53 ]
 	[ 39,	5,	72,	69,	-63,	-30 ]
@@ -388,7 +388,7 @@ spriteset(spriteset_paddles_default_running_empty, "gfx\paddles\default_running_
 	[ 547, 	5,	65,	71,	0,	-30 ]
 }
 
-spriteset(spriteset_paddles_default_still_empty, "gfx\paddles\default_still_empty.png"){
+spriteset(spriteset_paddles_default_still_empty, "gfx/paddles/default_still_empty.png"){
 	
 	[ 5, 	5,	31,	76,	-33,	-53 ]
 	[ 46,	5,	72,	69,	-63,	-30 ]
@@ -400,7 +400,7 @@ spriteset(spriteset_paddles_default_still_empty, "gfx\paddles\default_still_empt
 	[ 549, 	5,	65,	71,	0,	-30 ]
 }
 
-spriteset(spriteset_paddles_default_running_full, "gfx\paddles\default_running_full.png"){
+spriteset(spriteset_paddles_default_running_full, "gfx/paddles/default_running_full.png"){
 	
 	[ 5, 	5,	31,	76,	-33,	-52 ]
 	[ 39,	5,	72,	69,	-63,	-29 ]
@@ -412,7 +412,7 @@ spriteset(spriteset_paddles_default_running_full, "gfx\paddles\default_running_f
 	[ 547, 	5,	65,	71,	0,	-29 ]
 }
 
-spriteset(spriteset_paddles_default_still_full, "gfx\paddles\default_still_full.png"){
+spriteset(spriteset_paddles_default_still_full, "gfx/paddles/default_still_full.png"){
 	
 	[ 5, 	5,	31,	76,	-33,	-53 ]
 	[ 46,	5,	72,	69,	-63,	-29 ]
@@ -424,7 +424,7 @@ spriteset(spriteset_paddles_default_still_full, "gfx\paddles\default_still_full.
 	[ 549, 	5,	65,	71,	0,	-29 ]
 
 }
-spriteset(spriteset_paddles_mail_running_empty, "gfx\paddles\mail_running_empty.png") {
+spriteset(spriteset_paddles_mail_running_empty, "gfx/paddles/mail_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5,	31,	76,	-33,	-53 ]
 	[ 39,	5,	72,	69,	-63,	-30 ]
@@ -436,7 +436,7 @@ spriteset(spriteset_paddles_mail_running_empty, "gfx\paddles\mail_running_empty.
 	[ 547, 	5,	65,	71,	0,	-30 ]
 }
 
-spriteset(spriteset_paddles_mail_still_empty, "gfx\paddles\mail_still_empty.png"){
+spriteset(spriteset_paddles_mail_still_empty, "gfx/paddles/mail_still_empty.png"){
 	
 	[ 5, 	5,	31,	76,	-33,	-53 ]
 	[ 46,	5,	72,	69,	-63,	-30 ]
@@ -448,7 +448,7 @@ spriteset(spriteset_paddles_mail_still_empty, "gfx\paddles\mail_still_empty.png"
 	[ 549, 	5,	65,	71,	0,	-30 ]
 }
 
-spriteset(spriteset_paddles_mail_running_full, "gfx\paddles\mail_running_full.png"){
+spriteset(spriteset_paddles_mail_running_full, "gfx/paddles/mail_running_full.png"){
 	
 	[ 5, 	5,	31,	76,	-33,	-52 ]
 	[ 39,	5,	72,	69,	-63,	-29 ]
@@ -460,7 +460,7 @@ spriteset(spriteset_paddles_mail_running_full, "gfx\paddles\mail_running_full.pn
 	[ 547, 	5,	65,	71,	0,	-29 ]
 }
 
-spriteset(spriteset_paddles_mail_still_full, "gfx\paddles\mail_still_full.png"){
+spriteset(spriteset_paddles_mail_still_full, "gfx/paddles/mail_still_full.png"){
 	
 	[ 5, 	5,	31,	76,	-33,	-53 ]
 	[ 46,	5,	72,	69,	-63,	-29 ]
@@ -473,20 +473,20 @@ spriteset(spriteset_paddles_mail_still_full, "gfx\paddles\mail_still_full.png"){
 
 }
 
-spriteset(spriteset_paddles_buymenu,"gfx\paddles\default_still_empty.png"){
+spriteset(spriteset_paddles_buymenu,"gfx/paddles/default_still_empty.png"){
 /*	[ 454,	65,	87,	18,	-100,	-10 ]*/
 	[ 454,	65,	87,	18,	-44,	-10 ]
 }
 
-spriteset(spriteset_paddles_prev,"gfx\paddles\default_still_empty.png"){
+spriteset(spriteset_paddles_prev,"gfx/paddles/default_still_empty.png"){
 	[ 454,	65,	87,	18,	-44,	-10 ]
 }
 
-spriteset(spriteset_paddles_default_depot,"gfx\paddles\default_still_empty.png"){
+spriteset(spriteset_paddles_default_depot,"gfx/paddles/default_still_empty.png"){
 	[ 454,	65,	87,	18,	-44,	-10 ]
 }
 
-spriteset(spriteset_paddles_mail_depot,"gfx\paddles\mail_still_empty.png"){
+spriteset(spriteset_paddles_mail_depot,"gfx/paddles/mail_still_empty.png"){
 	[ 454,	65,	87,	18,	-44,	-10 ]
 }
 		
@@ -578,7 +578,7 @@ item (FEAT_SHIPS , item_paddles) {
 		default_cargo_type : PASS;
 		cargo_capacity : 120;
 //		sound_effect : SOUND_FACTORY_WHISTLE ;
-		sound_effect : sound("sound\horn Paddle Steamer.wav");
+		sound_effect : sound("sound/horn Paddle Steamer.wav");
 	}
 	graphics {
 		purchase: switch_paddles_default_purchase;
@@ -593,7 +593,7 @@ item (FEAT_SHIPS , item_paddles) {
 /*Merchantman*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_merch_default_running_empty, "gfx\merch\default_running_empty.png") {
+spriteset(spriteset_merch_default_running_empty, "gfx/merch/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -605,7 +605,7 @@ spriteset(spriteset_merch_default_running_empty, "gfx\merch\default_running_empt
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_merch_default_still_empty, "gfx\merch\default_still_empty.png"){
+spriteset(spriteset_merch_default_still_empty, "gfx/merch/default_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -617,7 +617,7 @@ spriteset(spriteset_merch_default_still_empty, "gfx\merch\default_still_empty.pn
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_merch_default_running_full, "gfx\merch\default_running_full.png"){
+spriteset(spriteset_merch_default_running_full, "gfx/merch/default_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -629,7 +629,7 @@ spriteset(spriteset_merch_default_running_full, "gfx\merch\default_running_full.
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_merch_default_still_full, "gfx\merch\default_still_full.png"){
+spriteset(spriteset_merch_default_still_full, "gfx/merch/default_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -642,7 +642,7 @@ spriteset(spriteset_merch_default_still_full, "gfx\merch\default_still_full.png"
 
 }
 
-spriteset(spriteset_merch_bulk_running_empty, "gfx\merch\bulk_running_empty.png") {
+spriteset(spriteset_merch_bulk_running_empty, "gfx/merch/bulk_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -654,7 +654,7 @@ spriteset(spriteset_merch_bulk_running_empty, "gfx\merch\bulk_running_empty.png"
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_merch_bulk_still_empty, "gfx\merch\bulk_still_empty.png"){
+spriteset(spriteset_merch_bulk_still_empty, "gfx/merch/bulk_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -666,7 +666,7 @@ spriteset(spriteset_merch_bulk_still_empty, "gfx\merch\bulk_still_empty.png"){
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_merch_bulk_running_full, "gfx\merch\bulk_running_full.png"){
+spriteset(spriteset_merch_bulk_running_full, "gfx/merch/bulk_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -678,7 +678,7 @@ spriteset(spriteset_merch_bulk_running_full, "gfx\merch\bulk_running_full.png"){
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_merch_bulk_still_full, "gfx\merch\bulk_still_full.png"){
+spriteset(spriteset_merch_bulk_still_full, "gfx/merch/bulk_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -692,7 +692,7 @@ spriteset(spriteset_merch_bulk_still_full, "gfx\merch\bulk_still_full.png"){
 }
 
 
-spriteset(spriteset_merch_pass_running_empty, "gfx\merch\pass_running_empty.png") {
+spriteset(spriteset_merch_pass_running_empty, "gfx/merch/pass_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -704,7 +704,7 @@ spriteset(spriteset_merch_pass_running_empty, "gfx\merch\pass_running_empty.png"
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_merch_pass_still_empty, "gfx\merch\pass_still_empty.png"){
+spriteset(spriteset_merch_pass_still_empty, "gfx/merch/pass_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -716,7 +716,7 @@ spriteset(spriteset_merch_pass_still_empty, "gfx\merch\pass_still_empty.png"){
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_merch_pass_running_full, "gfx\merch\pass_running_full.png"){
+spriteset(spriteset_merch_pass_running_full, "gfx/merch/pass_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -728,7 +728,7 @@ spriteset(spriteset_merch_pass_running_full, "gfx\merch\pass_running_full.png"){
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_merch_pass_still_full, "gfx\merch\pass_still_full.png"){
+spriteset(spriteset_merch_pass_still_full, "gfx/merch/pass_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -741,24 +741,24 @@ spriteset(spriteset_merch_pass_still_full, "gfx\merch\pass_still_full.png"){
 
 }
 
-spriteset(spriteset_merch_buymenu,"gfx\merch\default_still_empty.png"){
+spriteset(spriteset_merch_buymenu,"gfx/merch/default_still_empty.png"){
 /*	[ 400,	64,	65,	16,	-100,	-10 ]*/
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_merch_prev,"gfx\merch\default_still_empty.png"){
+spriteset(spriteset_merch_prev,"gfx/merch/default_still_empty.png"){
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_merch_default_depot,"gfx\merch\default_still_empty.png"){
+spriteset(spriteset_merch_default_depot,"gfx/merch/default_still_empty.png"){
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_merch_bulk_depot,"gfx\merch\bulk_still_empty.png"){
+spriteset(spriteset_merch_bulk_depot,"gfx/merch/bulk_still_empty.png"){
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_merch_pass_depot,"gfx\merch\pass_still_empty.png"){
+spriteset(spriteset_merch_pass_depot,"gfx/merch/pass_still_empty.png"){
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 		
@@ -874,7 +874,7 @@ item (FEAT_SHIPS , item_merch) {
 		is_refittable : 1;
 		default_cargo_type : GOOD;
 		cargo_capacity : 100;
-		sound_effect : sound("sound\bell Merchantman.wav");
+		sound_effect : sound("sound/bell Merchantman.wav");
 	}
 	graphics {
 		purchase: switch_merch_default_purchase;
@@ -901,7 +901,7 @@ item (FEAT_SHIPS , item_merch) {
 /*Barque*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_barque_default_running_empty, "gfx\barque\default_running_empty.png") {
+spriteset(spriteset_barque_default_running_empty, "gfx/barque/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -913,7 +913,7 @@ spriteset(spriteset_barque_default_running_empty, "gfx\barque\default_running_em
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_barque_default_still_empty, "gfx\barque\default_still_empty.png"){
+spriteset(spriteset_barque_default_still_empty, "gfx/barque/default_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -925,7 +925,7 @@ spriteset(spriteset_barque_default_still_empty, "gfx\barque\default_still_empty.
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_barque_default_running_full, "gfx\barque\default_running_full.png"){
+spriteset(spriteset_barque_default_running_full, "gfx/barque/default_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -937,7 +937,7 @@ spriteset(spriteset_barque_default_running_full, "gfx\barque\default_running_ful
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_barque_default_still_full, "gfx\barque\default_still_full.png"){
+spriteset(spriteset_barque_default_still_full, "gfx/barque/default_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -950,7 +950,7 @@ spriteset(spriteset_barque_default_still_full, "gfx\barque\default_still_full.pn
 
 }
 
-spriteset(spriteset_barque_bulk_running_empty, "gfx\barque\bulk_running_empty.png") {
+spriteset(spriteset_barque_bulk_running_empty, "gfx/barque/bulk_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -962,7 +962,7 @@ spriteset(spriteset_barque_bulk_running_empty, "gfx\barque\bulk_running_empty.pn
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_barque_bulk_still_empty, "gfx\barque\bulk_still_empty.png"){
+spriteset(spriteset_barque_bulk_still_empty, "gfx/barque/bulk_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -974,7 +974,7 @@ spriteset(spriteset_barque_bulk_still_empty, "gfx\barque\bulk_still_empty.png"){
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_barque_bulk_running_full, "gfx\barque\bulk_running_full.png"){
+spriteset(spriteset_barque_bulk_running_full, "gfx/barque/bulk_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -986,7 +986,7 @@ spriteset(spriteset_barque_bulk_running_full, "gfx\barque\bulk_running_full.png"
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_barque_bulk_still_full, "gfx\barque\bulk_still_full.png"){
+spriteset(spriteset_barque_bulk_still_full, "gfx/barque/bulk_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -999,7 +999,7 @@ spriteset(spriteset_barque_bulk_still_full, "gfx\barque\bulk_still_full.png"){
 
 }
 
-spriteset(spriteset_barque_pass_running_empty, "gfx\barque\pass_running_empty.png") {
+spriteset(spriteset_barque_pass_running_empty, "gfx/barque/pass_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1011,7 +1011,7 @@ spriteset(spriteset_barque_pass_running_empty, "gfx\barque\pass_running_empty.pn
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_barque_pass_still_empty, "gfx\barque\pass_still_empty.png"){
+spriteset(spriteset_barque_pass_still_empty, "gfx/barque/pass_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1023,7 +1023,7 @@ spriteset(spriteset_barque_pass_still_empty, "gfx\barque\pass_still_empty.png"){
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_barque_pass_running_full, "gfx\barque\pass_running_full.png"){
+spriteset(spriteset_barque_pass_running_full, "gfx/barque/pass_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1035,7 +1035,7 @@ spriteset(spriteset_barque_pass_running_full, "gfx\barque\pass_running_full.png"
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_barque_pass_still_full, "gfx\barque\pass_still_full.png"){
+spriteset(spriteset_barque_pass_still_full, "gfx/barque/pass_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1048,26 +1048,26 @@ spriteset(spriteset_barque_pass_still_full, "gfx\barque\pass_still_full.png"){
 
 }
 
-spriteset(spriteset_barque_buymenu,"gfx\barque\default_still_empty.png"){
+spriteset(spriteset_barque_buymenu,"gfx/barque/default_still_empty.png"){
 /*	[ 400,	64,	65,	16,	-100,	-10 ]*/
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_barque_prev,"gfx\barque\default_still_empty.png"){
+spriteset(spriteset_barque_prev,"gfx/barque/default_still_empty.png"){
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_barque_default_depot,"gfx\barque\default_still_empty.png"){
+spriteset(spriteset_barque_default_depot,"gfx/barque/default_still_empty.png"){
 /*	[ 400,	64,	65,	16,	-100,	-10 ]*/
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_barque_bulk_depot,"gfx\barque\bulk_still_empty.png"){
+spriteset(spriteset_barque_bulk_depot,"gfx/barque/bulk_still_empty.png"){
 /*	[ 400,	64,	65,	16,	-100,	-10 ]*/
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
 
-spriteset(spriteset_barque_pass_depot,"gfx\barque\pass_still_empty.png"){
+spriteset(spriteset_barque_pass_depot,"gfx/barque/pass_still_empty.png"){
 /*	[ 400,	64,	65,	16,	-100,	-10 ]*/
 	[ 400,	64,	65,	16,	-33,	-10 ]
 }
@@ -1180,7 +1180,7 @@ item (FEAT_SHIPS , item_barque) {
 		is_refittable : 1;
 		default_cargo_type : GOOD;
 		cargo_capacity : 120;
-		sound_effect : sound("sound\bell Barque.wav");
+		sound_effect : sound("sound/bell Barque.wav");
 	}
 	graphics {
 		purchase: switch_barque_default_purchase;
@@ -1207,7 +1207,7 @@ item (FEAT_SHIPS , item_barque) {
 /*Brig*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_brig_default_running_empty, "gfx\brig\default_running_empty.png") {
+spriteset(spriteset_brig_default_running_empty, "gfx/brig/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1219,7 +1219,7 @@ spriteset(spriteset_brig_default_running_empty, "gfx\brig\default_running_empty.
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_brig_default_still_empty, "gfx\brig\default_still_empty.png"){
+spriteset(spriteset_brig_default_still_empty, "gfx/brig/default_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1231,7 +1231,7 @@ spriteset(spriteset_brig_default_still_empty, "gfx\brig\default_still_empty.png"
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_brig_default_running_full, "gfx\brig\default_running_full.png"){
+spriteset(spriteset_brig_default_running_full, "gfx/brig/default_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1243,7 +1243,7 @@ spriteset(spriteset_brig_default_running_full, "gfx\brig\default_running_full.pn
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_brig_default_still_full, "gfx\brig\default_still_full.png"){
+spriteset(spriteset_brig_default_still_full, "gfx/brig/default_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1256,7 +1256,7 @@ spriteset(spriteset_brig_default_still_full, "gfx\brig\default_still_full.png"){
 
 }
 
-spriteset(spriteset_brig_bulk_running_empty, "gfx\brig\bulk_running_empty.png") {
+spriteset(spriteset_brig_bulk_running_empty, "gfx/brig/bulk_running_empty.png") {
 
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1268,7 +1268,7 @@ spriteset(spriteset_brig_bulk_running_empty, "gfx\brig\bulk_running_empty.png") 
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_brig_bulk_still_empty, "gfx\brig\bulk_still_empty.png"){
+spriteset(spriteset_brig_bulk_still_empty, "gfx/brig/bulk_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1280,7 +1280,7 @@ spriteset(spriteset_brig_bulk_still_empty, "gfx\brig\bulk_still_empty.png"){
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_brig_bulk_running_full, "gfx\brig\bulk_running_full.png"){
+spriteset(spriteset_brig_bulk_running_full, "gfx/brig/bulk_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1292,7 +1292,7 @@ spriteset(spriteset_brig_bulk_running_full, "gfx\brig\bulk_running_full.png"){
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_brig_bulk_still_full, "gfx\brig\bulk_still_full.png"){
+spriteset(spriteset_brig_bulk_still_full, "gfx/brig/bulk_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1305,21 +1305,21 @@ spriteset(spriteset_brig_bulk_still_full, "gfx\brig\bulk_still_full.png"){
 
 }
 
-spriteset(spriteset_brig_buymenu,"gfx\brig\default_still_empty.png"){
+spriteset(spriteset_brig_buymenu,"gfx/brig/default_still_empty.png"){
 /*	[ 400,	63,	51,	16,	-100,	-10 ]*/
 	[ 400,	63,	51,	16,	-25,	-10 ]
 }
 
-spriteset(spriteset_brig_prev,"gfx\brig\default_still_empty.png"){
+spriteset(spriteset_brig_prev,"gfx/brig/default_still_empty.png"){
 	[ 400,	63,	51,	16,	-25,	-10 ]
 }
 
-spriteset(spriteset_brig_default_depot,"gfx\brig\default_still_empty.png"){
+spriteset(spriteset_brig_default_depot,"gfx/brig/default_still_empty.png"){
 /*	[ 400,	63,	51,	16,	-100,	-10 ]*/
 	[ 400,	63,	51,	16,	-25,	-10 ]
 }
 
-spriteset(spriteset_brig_bulk_depot,"gfx\brig\bulk_still_empty.png"){
+spriteset(spriteset_brig_bulk_depot,"gfx/brig/bulk_still_empty.png"){
 /*	[ 400,	63,	51,	16,	-100,	-10 ]*/
 	[ 400,	63,	51,	16,	-25,	-10 ]
 }
@@ -1415,7 +1415,7 @@ item (FEAT_SHIPS , item_brig) {
 		is_refittable : 1;
 		default_cargo_type : GOOD;
 		cargo_capacity : 50;
-		sound_effect : sound("sound\bell Brig.wav");
+		sound_effect : sound("sound/bell Brig.wav");
 	}
 	graphics {
 		purchase: switch_brig_default_purchase;
@@ -1441,7 +1441,7 @@ item (FEAT_SHIPS , item_brig) {
 /*Schooner*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_schon_default_running_empty, "gfx\schon\default_running_empty.png") {
+spriteset(spriteset_schon_default_running_empty, "gfx/schon/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1453,7 +1453,7 @@ spriteset(spriteset_schon_default_running_empty, "gfx\schon\default_running_empt
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_schon_default_still_empty, "gfx\schon\default_still_empty.png"){
+spriteset(spriteset_schon_default_still_empty, "gfx/schon/default_still_empty.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-48 ]
 	[ 40,	5,	69,	61,	-57,	-23 ]
@@ -1465,7 +1465,7 @@ spriteset(spriteset_schon_default_still_empty, "gfx\schon\default_still_empty.pn
 	[ 490,	5,	69,	64,	-15,	-25 ]
 }
 
-spriteset(spriteset_schon_default_running_full, "gfx\schon\default_running_full.png"){
+spriteset(spriteset_schon_default_running_full, "gfx/schon/default_running_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1477,7 +1477,7 @@ spriteset(spriteset_schon_default_running_full, "gfx\schon\default_running_full.
 	[ 490,	5,	69,	64,	-15,	-24 ]
 }
 
-spriteset(spriteset_schon_default_still_full, "gfx\schon\default_still_full.png"){
+spriteset(spriteset_schon_default_still_full, "gfx/schon/default_still_full.png"){
 	
 	[ 5,	5,	27,	71,	-14,	-47 ]
 	[ 40,	5,	69,	61,	-57,	-22 ]
@@ -1490,16 +1490,16 @@ spriteset(spriteset_schon_default_still_full, "gfx\schon\default_still_full.png"
 
 }
 
-spriteset(spriteset_schon_buymenu,"gfx\schon\default_still_empty.png"){
+spriteset(spriteset_schon_buymenu,"gfx/schon/default_still_empty.png"){
 /*	[ 400,	64,	47,	16,	-100,	-10 ]*/
 	[ 400,	64,	47,	16,	-24,	-10 ]
 }
 
-spriteset(spriteset_schon_prev,"gfx\schon\default_still_empty.png"){
+spriteset(spriteset_schon_prev,"gfx/schon/default_still_empty.png"){
 	[ 400,	64,	47,	16,	-24,	-10 ]
 }		
 
-spriteset(spriteset_schon_default_depot,"gfx\schon\default_still_empty.png"){
+spriteset(spriteset_schon_default_depot,"gfx/schon/default_still_empty.png"){
 	[ 400,	64,	47,	16,	-24,	-10 ]
 }	
 
@@ -1569,7 +1569,7 @@ item (FEAT_SHIPS , item_schon) {
 		is_refittable : 1;
 		default_cargo_type : GOOD;
 		cargo_capacity : 40;
-		sound_effect : sound("sound\bell Schoner.wav");
+		sound_effect : sound("sound/bell Schoner.wav");
 	}
 	graphics {
 		purchase: switch_schon_default_purchase;
@@ -1583,7 +1583,7 @@ item (FEAT_SHIPS , item_schon) {
 /*Windjammer*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_windj_default_running_empty, "gfx\windj\default_running_empty.png") {
+spriteset(spriteset_windj_default_running_empty, "gfx/windj/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1595,7 +1595,7 @@ spriteset(spriteset_windj_default_running_empty, "gfx\windj\default_running_empt
 	[ 650,	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_windj_default_still_empty, "gfx\windj\default_still_empty.png"){
+spriteset(spriteset_windj_default_still_empty, "gfx/windj/default_still_empty.png"){
 	
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1607,7 +1607,7 @@ spriteset(spriteset_windj_default_still_empty, "gfx\windj\default_still_empty.pn
 	[ 650,	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_windj_default_running_full, "gfx\windj\default_running_full.png"){
+spriteset(spriteset_windj_default_running_full, "gfx/windj/default_running_full.png"){
 	
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1619,7 +1619,7 @@ spriteset(spriteset_windj_default_running_full, "gfx\windj\default_running_full.
 	[ 650,	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_windj_default_still_full, "gfx\windj\default_still_full.png"){
+spriteset(spriteset_windj_default_still_full, "gfx/windj/default_still_full.png"){
 	
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1632,7 +1632,7 @@ spriteset(spriteset_windj_default_still_full, "gfx\windj\default_still_full.png"
 
 }
 
-spriteset(spriteset_windj_bulk_running_empty, "gfx\windj\bulk_running_empty.png") {
+spriteset(spriteset_windj_bulk_running_empty, "gfx/windj/bulk_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1644,7 +1644,7 @@ spriteset(spriteset_windj_bulk_running_empty, "gfx\windj\bulk_running_empty.png"
 	[ 650,	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_windj_bulk_still_empty, "gfx\windj\bulk_still_empty.png"){
+spriteset(spriteset_windj_bulk_still_empty, "gfx/windj/bulk_still_empty.png"){
 	
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1656,7 +1656,7 @@ spriteset(spriteset_windj_bulk_still_empty, "gfx\windj\bulk_still_empty.png"){
 	[ 650,	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_windj_bulk_running_full, "gfx\windj\bulk_running_full.png"){
+spriteset(spriteset_windj_bulk_running_full, "gfx/windj/bulk_running_full.png"){
 	
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1668,7 +1668,7 @@ spriteset(spriteset_windj_bulk_running_full, "gfx\windj\bulk_running_full.png"){
 	[ 650,	5,	90,	87,	-35,	-50 ]
 }
 
-spriteset(spriteset_windj_bulk_still_full, "gfx\windj\bulk_still_full.png"){
+spriteset(spriteset_windj_bulk_still_full, "gfx/windj/bulk_still_full.png"){
 	
 	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
 	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
@@ -1681,21 +1681,21 @@ spriteset(spriteset_windj_bulk_still_full, "gfx\windj\bulk_still_full.png"){
 
 }
 
-spriteset(spriteset_windj_buymenu,"gfx\windj\default_still_empty.png"){
+spriteset(spriteset_windj_buymenu,"gfx/windj/default_still_empty.png"){
 /*	[ 525,	84,	93,	15,	-100,	-10 ]*/
 	[ 525,	84,	93,	15,	-46,	-10 ]
 }
 
-spriteset(spriteset_windj_prev,"gfx\windj\default_still_empty.png"){
+spriteset(spriteset_windj_prev,"gfx/windj/default_still_empty.png"){
 	[ 525,	84,	93,	15,	-46,	-10 ]
 }
 
-spriteset(spriteset_windj_default_depot,"gfx\windj\default_still_empty.png"){
+spriteset(spriteset_windj_default_depot,"gfx/windj/default_still_empty.png"){
 /*	[ 525,	84,	93,	15,	-100,	-10 ]*/
 	[ 525,	84,	93,	15,	-46,	-10 ]
 }
 
-spriteset(spriteset_windj_bulk_depot,"gfx\windj\bulk_still_empty.png"){
+spriteset(spriteset_windj_bulk_depot,"gfx/windj/bulk_still_empty.png"){
 /*	[ 525,	84,	93,	15,	-100,	-10 ]*/
 	[ 525,	84,	93,	15,	-46,	-10 ]
 }
@@ -1790,7 +1790,7 @@ item (FEAT_SHIPS , item_windj) {
 		is_refittable : 1;
 		default_cargo_type : GOOD;
 		cargo_capacity : 240;
-		sound_effect : sound("sound\bell Windjammer.wav");
+		sound_effect : sound("sound/bell Windjammer.wav");
 	}
 	graphics {
 
@@ -1816,7 +1816,7 @@ item (FEAT_SHIPS , item_windj) {
 /*Steamship*/
 /*first, define spritesets to be referenced by spritegroups */
 
-spriteset(spriteset_steam_default_running_empty, "gfx\steam\default_running_empty.png") {
+spriteset(spriteset_steam_default_running_empty, "gfx/steam/default_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1828,7 +1828,7 @@ spriteset(spriteset_steam_default_running_empty, "gfx\steam\default_running_empt
 	[ 755,	5, 	115, 	91, 	-30,	-35 ]
 }
 
-spriteset(spriteset_steam_default_still_empty, "gfx\steam\default_still_empty.png"){
+spriteset(spriteset_steam_default_still_empty, "gfx/steam/default_still_empty.png"){
 	
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1840,7 +1840,7 @@ spriteset(spriteset_steam_default_still_empty, "gfx\steam\default_still_empty.pn
 	[ 755,	5, 	115, 	91, 	-30,	-35 ]
 }
 
-spriteset(spriteset_steam_default_running_full, "gfx\steam\default_running_full.png"){
+spriteset(spriteset_steam_default_running_full, "gfx/steam/default_running_full.png"){
 	
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1852,7 +1852,7 @@ spriteset(spriteset_steam_default_running_full, "gfx\steam\default_running_full.
 	[ 755,	5, 	115, 	91, 	-30,	-35 ]
 }
 
-spriteset(spriteset_steam_default_still_full, "gfx\steam\default_still_full.png"){
+spriteset(spriteset_steam_default_still_full, "gfx/steam/default_still_full.png"){
 	
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1865,7 +1865,7 @@ spriteset(spriteset_steam_default_still_full, "gfx\steam\default_still_full.png"
 
 }
 
-spriteset(spriteset_steam_mail_running_empty, "gfx\steam\mail_running_empty.png") {
+spriteset(spriteset_steam_mail_running_empty, "gfx/steam/mail_running_empty.png") {
     //left_x, upper_y, width, height, offset_x, offset_y
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1877,7 +1877,7 @@ spriteset(spriteset_steam_mail_running_empty, "gfx\steam\mail_running_empty.png"
 	[ 755,	5, 	115, 	91, 	-30,	-35 ]
 }
 
-spriteset(spriteset_steam_mail_still_empty, "gfx\steam\mail_still_empty.png"){
+spriteset(spriteset_steam_mail_still_empty, "gfx/steam/mail_still_empty.png"){
 	
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1889,7 +1889,7 @@ spriteset(spriteset_steam_mail_still_empty, "gfx\steam\mail_still_empty.png"){
 	[ 755,	5, 	115, 	91, 	-30,	-35 ]
 }
 
-spriteset(spriteset_steam_mail_running_full, "gfx\steam\mail_running_full.png"){
+spriteset(spriteset_steam_mail_running_full, "gfx/steam/mail_running_full.png"){
 	
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1901,7 +1901,7 @@ spriteset(spriteset_steam_mail_running_full, "gfx\steam\mail_running_full.png"){
 	[ 755,	5, 	115, 	91, 	-30,	-35 ]
 }
 
-spriteset(spriteset_steam_mail_still_full, "gfx\steam\mail_still_full.png"){
+spriteset(spriteset_steam_mail_still_full, "gfx/steam/mail_still_full.png"){
 	
 	[ 5,	5,	29,	105,	-12,	-50 ]
 	[ 40,	5,	114,	91,	-75,	-40 ]
@@ -1914,21 +1914,21 @@ spriteset(spriteset_steam_mail_still_full, "gfx\steam\mail_still_full.png"){
 
 }
 
-spriteset(spriteset_steam_buymenu,"gfx\steam\default_still_empty.png"){
+spriteset(spriteset_steam_buymenu,"gfx/steam/default_still_empty.png"){
 /*	[ 600,	68,	75,	26,	-100,	-10 ]*/
 	[ 600,	68,	75,	26,	-37,	-10 ]
 }
 
-spriteset(spriteset_steam_prev,"gfx\steam\default_still_empty.png"){
+spriteset(spriteset_steam_prev,"gfx/steam/default_still_empty.png"){
 	[ 600,	68,	75,	26,	-37,	-10 ]
 }
 
-spriteset(spriteset_steam_default_depot,"gfx\steam\default_still_empty.png"){
+spriteset(spriteset_steam_default_depot,"gfx/steam/default_still_empty.png"){
 /*	[ 600,	68,	75,	26,	-100,	-10 ]*/
 	[ 600,	68,	75,	26,	-37,	-10 ]
 }
 
-spriteset(spriteset_steam_mail_depot,"gfx\steam\mail_still_empty.png"){
+spriteset(spriteset_steam_mail_depot,"gfx/steam/mail_still_empty.png"){
 /*	[ 600,	68,	75,	26,	-100,	-10 ]*/
 	[ 600,	68,	75,	26,	-37,	-10 ]
 }		
@@ -2022,7 +2022,7 @@ item (FEAT_SHIPS , item_steam) {
 		default_cargo_type : PASS;
 		cargo_capacity : 240;
 		//sound_effect : SOUND_FACTORY_WHISTLE;
-		sound_effect : sound("sound\horn Steamship.wav");
+		sound_effect : sound("sound/horn Steamship.wav");
 	}
 	graphics {
 		purchase: switch_steam_default_purchase;
