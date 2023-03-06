@@ -1,6 +1,27 @@
 Sailing ships by James Mitchell (Mouse)
 (c)2010
 
+Version 0.7
+
+Tweaks by sevenfm:
+
+- added Russian translation
+- ship bell sound replaced with less annoying
+- fixed image offset bug for ships in dock
+- changed starting dates for some ships
+- some ship properties changes for better balance
+- ship autorefitting enabled for convenience
+- cargo_age_period value changed to match value in Squid ate Fish, also it's different for ships - cargo will decay faster in small ships
+- ship introduction dates changed: Brig and Schooner start at the same time, next Barque and Merchantman appear in the middle of 17xx, starting dates for other ships are not changed.
+- ship balance was reworked to fit better with Squid ships set. I found that in original Sailing Ships set Schooner and Clipper were too effective making other ships useless.
+- big ships (Clipper, Windjammer, Steamship) have reduced speed on rivers/canals,
+- loading speed was reduced for big ships.
+- more differentiation in cargo:
+  - Brig and Barque are good for cheap bulk cargo transport but less effective for quick decaying cargo because of slow speed, and they cannot transport mail/passengers.
+  - Schooner and Merchantman are faster and can transport various goods and also mail/passengers, but not bulk cargo, also they have higher running costs than Brig and Barque.
+  - Clipper is good for transportation on medium/long range but has higher running cost than Merchantman and reduced loading speed.
+  - Steamship and Windjammer are good for long range transportation and can be better than early ships from Squid starting from 1860, but they cost more.
+
 Version 0.62
 
 Currently included:
