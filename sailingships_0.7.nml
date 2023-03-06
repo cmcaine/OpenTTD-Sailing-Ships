@@ -4,6 +4,7 @@ grf {
 	desc : string(STR_GRF_DESCRIPTION);
 	version: 5;
 	min_compatible_version : 4;
+	url : string(STR_GRF_URL);
 
 	param {
         param_purchase_cost {

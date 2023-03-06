@@ -1,2 +1,2 @@
-TITLE :Sailing Ships
+TITLE :Sailing Ships (tweaked)
 VERSION :0.7

@@ -2,7 +2,8 @@
 
 #Grf parameter strings
 STR_GRF_NAME : {TITLE} {VERSION}
-STR_GRF_DESCRIPTION : Wind and steam powered ships for OTTD {} {COPYRIGHT}J Mitchell 2012. Refit-at-station support, translations and rebalancing by sevenfm.
+STR_GRF_DESCRIPTION : Wind and steam powered ships for OTTD {} {COPYRIGHT}J Mitchell 2012. Refit-at-station support, Russian translation, rebalancing to match SQUID ships and some other changes by sevenfm.
+STR_GRF_URL : https://www.tt-forums.net/viewtopic.php?p=1192285#p1192285
 
 STR_PARAM_NAME_PURCHASE_COST    	:Purchase cost modifier
 STR_PARAM_DESC_PURCHASE_COST    	:Use this option to change the purchase cost of vehicles from this set.
