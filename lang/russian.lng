@@ -1,0 +1,39 @@
+##grflangid 0x07
+##plural 6
+##gender p n m f
+##case acc nom pre f abl m n dat p gen
+
+#Grf parameter strings
+STR_GRF_NAME :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :Парусные корабли и пароходы для OTTD {} {COPYRIGHT}J Mitchell 2012
+
+STR_PARAM_NAME_PURCHASE_COST    	:Стоимость покупки
+STR_PARAM_DESC_PURCHASE_COST    	:Используйте эту опцию, чтобы изменить стоимость покупки кораблей из этого набора.
+STR_PARAM_NAME_RUNNING_COST     	:Стоимость обслуживания
+STR_PARAM_DESC_RUNNING_COST     	:Используйте эту опцию, чтобы изменить стоимость обслуживания кораблей из этого набора.
+
+STR_PARAM_COST_H               		:Половинная
+STR_PARAM_COST_N               		:Нормальная
+STR_PARAM_COST_D               		:Двойная
+
+#Names
+STR_CLIPPER_NAME 	:Клипер
+STR_PADDLES_NAME 	:Колесный пароход
+STR_MERCH_NAME		:Торговый корабль
+STR_BARQUE_NAME		:Барк
+STR_BRIG_NAME		:Бриг
+STR_SCHON_NAME		:Шхуна
+STR_STEAM_NAME		:Лайнер
+STR_WINDJ_NAME		:Винджаммер
+STR_KETCH_NAME		:Кеч
+
+#Buy menu
+STR_CLIPPER_BUYMENU :{BLACK}Движитель: {GOLD}Прямое парусное вооружение{}{BLACK}Скорость погрузки: {GOLD}Низкая
+STR_PADDLES_BUYMENU :{BLACK}Движитель: {GOLD}Трехмачтовый барк с паровым двигателем{}{BLACK}Скорость погрузки: {GOLD}Выше средней
+STR_MERCH_BUYMENU :{BLACK}Движитель: {GOLD}Прямое парусное вооружение{}{BLACK}Скорость погрузки: {GOLD}Выше средней
+STR_BARQUE_BUYMENU :{BLACK}Движитель: {GOLD}Трехмачтовый с косым парусным вооружением бизань-мачты{}{BLACK}Скорость погрузки: {GOLD}Средняя
+STR_BRIG_BUYMENU :{BLACK}Движитель: {GOLD}Прямое парусное вооружение{}{BLACK}Скорость погрузки: {GOLD}Средняя
+STR_SCHON_BUYMENU :{BLACK}Движитель: {GOLD}Две мачты с косым парусным вооружением{}{BLACK}Скорость погрузки: {GOLD}Ниже средней
+STR_STEAM_BUYMENU :{BLACK}Движитель: {GOLD}Три мачты с прямым парусным вооружением, четвертая джиггер-мачта и гребной винт{}{GOLD}Скорость погрузки: {GOLD}Низкая
+STR_WINDJ_BUYMENU :{BLACK}Движитель: {GOLD}Четыре мачты с прямым парусным вооружением{}{BLACK}Скорость погрузки: {GOLD}Низкая
+STR_KETCH_BUYMENU :{BLACK}Движитель: {GOLD}Две мачты с косым парусным вооружением

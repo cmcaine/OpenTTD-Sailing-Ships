@@ -1,0 +1,34 @@
+##grflangid 0x02
+
+#Grf parameter strings
+STR_GRF_NAME : {TITLE} {VERSION}
+STR_GRF_DESCRIPTION : Wind und dampfgetriebenen Schiffe für OTTD {} {COPYRIGHT}J Mitchell 2012
+
+STR_PARAM_NAME_PURCHASE_COST    	:Purchase cost modifier
+STR_PARAM_DESC_PURCHASE_COST    	:Use this option to change the purchase cost of vehicles from this set.
+STR_PARAM_NAME_RUNNING_COST     	:Running cost modifier
+STR_PARAM_DESC_RUNNING_COST     	:Use this option to change the running cost of vehicles from this set.
+
+STR_PARAM_COST_H               		: Half
+STR_PARAM_COST_N               		: Normal
+STR_PARAM_COST_D               		: Double
+
+#Names
+STR_CLIPPER_NAME 	:            Clipper
+STR_PADDLES_NAME 	:            Raddampfer
+STR_MERCH_NAME		:            Handelsschiff
+STR_BARQUE_NAME		:            Barke
+STR_BRIG_NAME		:            Brigg
+STR_SCHON_NAME		:            Schoner
+STR_STEAM_NAME		:            Dampfschiff
+STR_WINDJ_NAME		:            Windjammer
+
+#Buy menu
+STR_CLIPPER_BUYMENU :{BLACK}Antrieb: {GOLD}Vollschiff
+STR_PADDLES_BUYMENU :{BLACK}Antrieb: {GOLD}Drei mastige barke mit einer Dampfmaschine für leichte Winde
+STR_MERCH_BUYMENU :{BLACK}Antrieb: {GOLD}Vollschiff
+STR_BARQUE_BUYMENU :{BLACK}Antrieb: {GOLD}Drei mastige schiff
+STR_BRIG_BUYMENU :{BLACK}Antrieb: {GOLD}Vollschiff
+STR_SCHON_BUYMENU :{BLACK}Antrieb: {GOLD}Zwei mastige schiff
+STR_STEAM_BUYMENU :{BLACK}Antrieb: {GOLD}Vollschiff mit einem Schoggitorte Mast und ein Dampf Propeller
+STR_WINDJ_BUYMENU :{BLACK}Antrieb: {GOLD}Vier mastige Vollschiff

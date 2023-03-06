@@ -1,0 +1,45 @@
+Schooner:
+
+Ketch:
+Draw sprites (47)
+
+Paddle steamer:
+Add steam effect
+
+Steamer:
+Add steam effect
+
+Barque:
+Divide into 'barque, East indiaman and barquentine'
+code to template.
+code to restrict cargo class
+Add special cargo sprites in code
+
+Brig:
+Divide into 'brig and brigantine'
+code to template.
+code to restrict cargo class
+Add special cargo sprites in code
+
+Merchantman:
+Divide into 'Full Rigged Ship, Collier and Merchantman'
+code to template.
+code to restrict cargo class
+Add special cargo sprites in code
+
+Windjammer:
+Divide into 'Windjammer and grain ship'
+code to template.
+code to restrict cargo class
+Add special cargo sprites in code
+Increase cargo capacity
+
+Clipper:
+Divide into 'packet ship, blackwall frigate and aberdeen clipper'
+code to template.
+code to restrict cargo class
+Add special cargo sprites in code
+Add updated graphics for upgrades: 'American clipper, Medium clipper'
+Change introduction dates.
+
+Other ideas: Add half speed for canals  topsails only.

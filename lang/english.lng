@@ -1,0 +1,36 @@
+##grflangid 0x01
+
+#Grf parameter strings
+STR_GRF_NAME : {TITLE} {VERSION}
+STR_GRF_DESCRIPTION : Wind and steam powered ships for OTTD {} {COPYRIGHT}J Mitchell 2012
+
+STR_PARAM_NAME_PURCHASE_COST    	:Purchase cost modifier
+STR_PARAM_DESC_PURCHASE_COST    	:Use this option to change the purchase cost of vehicles from this set.
+STR_PARAM_NAME_RUNNING_COST     	:Running cost modifier
+STR_PARAM_DESC_RUNNING_COST     	:Use this option to change the running cost of vehicles from this set.
+
+STR_PARAM_COST_H               		: Half
+STR_PARAM_COST_N               		: Normal
+STR_PARAM_COST_D               		: Double
+
+#Names
+STR_CLIPPER_NAME 	:            Clipper
+STR_PADDLES_NAME 	:            Paddle Steamer
+STR_MERCH_NAME		:            Merchantman
+STR_BARQUE_NAME		:            Barque
+STR_BRIG_NAME		:            Brig
+STR_SCHON_NAME		:            Schooner
+STR_STEAM_NAME		:            Steamship
+STR_WINDJ_NAME		:            Windjammer
+STR_KETCH_NAME		:            Ketch
+
+#Buy menu
+STR_CLIPPER_BUYMENU :{BLACK}Propulsion: {GOLD}Full rig
+STR_PADDLES_BUYMENU :{BLACK}Propulsion: {GOLD}Three masted barque with steam engine for light winds
+STR_MERCH_BUYMENU :{BLACK}Propulsion: {GOLD}Full rig
+STR_BARQUE_BUYMENU :{BLACK}Propulsion: {GOLD}Three masted with gaff mizzen mast
+STR_BRIG_BUYMENU :{BLACK}Propulsion: {GOLD}Full rig
+STR_SCHON_BUYMENU :{BLACK}Propulsion: {GOLD}Fore-and-aft rigged
+STR_STEAM_BUYMENU :{BLACK}Propulsion: {GOLD}Three fully rigged masts, a fourth fore-and-aft Jigger-mast, and a steam screw
+STR_WINDJ_BUYMENU :{BLACK}Propulsion: {GOLD}Four fully rigged masts
+STR_KETCH_BUYMENU :{BLACK}Propulsion: {GOLD}Fore-and-aft rigged

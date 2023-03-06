@@ -1,0 +1,1994 @@
+grf {
+	grfid : "JM\01\01";
+	name : string(STR_GRF_NAME);
+	desc : string(STR_GRF_DESCRIPTION);
+	version: 5;
+	min_compatible_version : 4;
+}
+
+/*Cargo table for use with spritesets*/
+cargotable {
+	PASS,
+	MAIL,
+	FISH,
+	GOOD,
+	COAL,
+	WOOD,
+	IORE,
+	WHEA,
+	MAIZ,
+	CORE,
+	AORE,
+	CERE,
+	CLAY,
+	COPR,
+	GRVL,
+	SAND
+	
+}
+
+
+/*Clipper*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_clipper_default_running_empty, "gfx\clipper\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_default_still_empty, "gfx\clipper\default_still_empty.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_default_running_full, "gfx\clipper\default_running_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+}
+
+spriteset(spriteset_clipper_default_still_full, "gfx\clipper\default_still_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+
+}
+
+spriteset(spriteset_clipper_pass_running_empty, "gfx\clipper\pass_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_pass_still_empty, "gfx\clipper\pass_still_empty.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_pass_running_full, "gfx\clipper\pass_running_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+}
+
+spriteset(spriteset_clipper_pass_still_full, "gfx\clipper\pass_still_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+
+}
+
+
+spriteset(spriteset_clipper_bulk_running_empty, "gfx\clipper\bulk_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_bulk_still_empty, "gfx\clipper\bulk_still_empty.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-60 ]
+	[ 50,	5,	89,	87,	-58,	-50 ]
+	[ 150, 	5,	115,	74,	-50, 	-60 ]
+	[ 275, 	5,	93,	86,	-20, 	-45 ]
+	[ 375, 	5,	38,	99,	-20, 	-63 ]
+	[ 425, 	5,	93,	86,	-70, 	-43 ]
+	[ 525, 	5,	115,	74,	-60, 	-60 ]
+	[ 650, 	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_clipper_bulk_running_full, "gfx\clipper\bulk_running_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+}
+
+spriteset(spriteset_clipper_bulk_still_full, "gfx\clipper\bulk_still_full.png"){
+	
+	[ 5, 	5,	36,	99,	-18,	-59 ]
+	[ 50,	5,	89,	87,	-58,	-49 ]
+	[ 150, 	5,	115,	74,	-50, 	-59 ]
+	[ 275, 	5,	93,	86,	-20, 	-44 ]
+	[ 375, 	5,	38,	99,	-20, 	-62 ]
+	[ 425, 	5,	93,	86,	-70, 	-42 ]
+	[ 525, 	5,	115,	74,	-60, 	-59 ]
+	[ 650, 	5,	90,	87,	-35,	-49 ]
+
+}
+
+spriteset(spriteset_clipper_buymenu,"gfx\clipper\default_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_prev,"gfx\clipper\default_still_empty.png"){
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_default_depot,"gfx\clipper\default_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_bulk_depot,"gfx\clipper\bulk_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+spriteset(spriteset_clipper_pass_depot,"gfx\clipper\pass_still_empty.png"){
+/*	[ 552,	87,	88,	15,	-150,	-10 ]*/
+	[ 552,	87,	88,	15,	-44,	-10 ]
+}
+
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_clipper_default_still{
+	loading: [spriteset_clipper_default_still_empty, spriteset_clipper_default_still_full];
+	loaded: [spriteset_clipper_default_still_empty, spriteset_clipper_default_still_full];
+}
+
+spritegroup spritegroup_clipper_default_running{
+	loading: [spriteset_clipper_default_running_empty,spriteset_clipper_default_running_full];
+	loaded: [spriteset_clipper_default_running_empty,spriteset_clipper_default_running_full];
+}
+
+
+spritegroup spritegroup_clipper_pass_still{
+	loading: [spriteset_clipper_pass_still_empty, spriteset_clipper_pass_still_full];
+	loaded: [spriteset_clipper_pass_still_empty, spriteset_clipper_pass_still_full];
+}
+
+spritegroup spritegroup_clipper_pass_running{
+	loading: [spriteset_clipper_pass_running_empty,spriteset_clipper_pass_running_full];
+	loaded: [spriteset_clipper_pass_running_empty,spriteset_clipper_pass_running_full];
+}
+
+spritegroup spritegroup_clipper_bulk_still{
+	loading: [spriteset_clipper_bulk_still_empty, spriteset_clipper_bulk_still_full];
+	loaded: [spriteset_clipper_bulk_still_empty, spriteset_clipper_bulk_still_full];
+}
+
+spritegroup spritegroup_clipper_bulk_running{
+	loading: [spriteset_clipper_bulk_running_empty,spriteset_clipper_bulk_running_full];
+	loaded: [spriteset_clipper_bulk_running_empty,spriteset_clipper_bulk_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_clipper_default_move, current_speed) {
+ 	0 :   spritegroup_clipper_default_still; 
+ 	spritegroup_clipper_default_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_clipper_pass_move, current_speed) {
+ 	0 :   spritegroup_clipper_pass_still; 
+ 	spritegroup_clipper_pass_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_clipper_bulk_move, current_speed) {
+ 	0 :   spritegroup_clipper_bulk_still; 
+ 	spritegroup_clipper_bulk_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_clippercargo, cargo_type_in_veh) {
+ 	PASS :   return 80;
+ 	return 160;
+ }
+
+switch (FEAT_SHIPS, SELF, switch_clipper_default_depot,extra_callback_info1) {
+	0x10 : spriteset_clipper_default_depot;
+	0x11 : spriteset_clipper_default_depot;
+	0x12 : spriteset_clipper_default_depot;
+	switch_clipper_default_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_clipper_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_clipper_buymenu;
+	0x21 : spriteset_clipper_prev;
+	spriteset_clipper_buymenu;
+}
+
+switch (FEAT_SHIPS, SELF, switch_clipper_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_clipper_bulk_depot;
+	0x11 : spriteset_clipper_bulk_depot;
+	0x12 : spriteset_clipper_bulk_depot;
+	switch_clipper_bulk_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_clipper_pass_depot,extra_callback_info1) {
+	0x10 : spriteset_clipper_pass_depot;
+	0x11 : spriteset_clipper_pass_depot;
+	0x12 : spriteset_clipper_pass_depot;
+	switch_clipper_pass_move;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_clipper) {
+	property {
+		name : string(STR_CLIPPER_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1820,03,01);
+		reliability_decay : 15;
+		model_life : 65;
+		vehicle_life : 20;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_BULK);
+		loading_speed: 10;
+		cost_factor : 150;
+		running_cost_factor: 110;
+		cargo_age_period: 740;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 32 km/h;
+		ocean_speed_fraction: 1;
+		canal_speed_fraction: 0.33;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 160;
+		sound_effect : sound("shipsbell.wav");
+	}
+	graphics {
+		purchase: switch_clipper_default_purchase;
+		additional_text: string(STR_CLIPPER_BUYMENU);
+		cargo_capacity:switch_clippercargo;
+		default: switch_clipper_default_depot;
+		PASS: switch_clipper_pass_depot;
+		COAL : switch_clipper_bulk_depot;
+		WOOD : switch_clipper_bulk_depot;
+		IORE : switch_clipper_bulk_depot;
+		WHEA : switch_clipper_bulk_depot;
+		MAIZ : switch_clipper_bulk_depot;
+		CORE : switch_clipper_bulk_depot;
+		AORE : switch_clipper_bulk_depot;
+		CERE : switch_clipper_bulk_depot;
+		CLAY : switch_clipper_bulk_depot;
+		COPR : switch_clipper_bulk_depot;
+		GRVL : switch_clipper_bulk_depot;
+		SAND : switch_clipper_bulk_depot;
+	}
+}
+
+
+/*Paddle steamer*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_paddles_default_running_empty, "gfx\paddles\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	31,	76,	-33,	-53 ]
+	[ 39,	5,	72,	69,	-63,	-30 ]
+	[ 121, 	5,	94,	60,	-23,	-51 ]
+	[ 225, 	5,	83,	66,	-8, 	-30 ]
+	[ 318, 	5,	32,	79,	-35, 	-51 ]
+	[ 365, 	5,	75,	73,	-68, 	-38 ]
+	[ 450, 	5,	87,	59,	-32, 	-36 ]
+	[ 547, 	5,	65,	71,	0,	-30 ]
+}
+
+spriteset(spriteset_paddles_default_still_empty, "gfx\paddles\default_still_empty.png"){
+	
+	[ 5, 	5,	31,	76,	-33,	-53 ]
+	[ 46,	5,	72,	69,	-63,	-30 ]
+	[ 123, 	5,	94,	60,	-23,	-51 ]
+	[ 230, 	5,	83,	66,	-8, 	-30 ]
+	[ 318, 	5,	32,	79,	-35, 	-51 ]
+	[ 365, 	5,	75,	73,	-68, 	-38 ]
+	[ 454, 	5,	87,	59,	-32, 	-36 ]
+	[ 549, 	5,	65,	71,	0,	-30 ]
+}
+
+spriteset(spriteset_paddles_default_running_full, "gfx\paddles\default_running_full.png"){
+	
+	[ 5, 	5,	31,	76,	-33,	-52 ]
+	[ 39,	5,	72,	69,	-63,	-29 ]
+	[ 121, 	5,	94,	60,	-23,	-50 ]
+	[ 225, 	5,	83,	66,	-8, 	-29 ]
+	[ 318, 	5,	32,	79,	-35, 	-50 ]
+	[ 365, 	5,	75,	73,	-68, 	-37 ]
+	[ 450, 	5,	87,	59,	-32, 	-35 ]
+	[ 547, 	5,	65,	71,	0,	-29 ]
+}
+
+spriteset(spriteset_paddles_default_still_full, "gfx\paddles\default_still_full.png"){
+	
+	[ 5, 	5,	31,	76,	-33,	-53 ]
+	[ 46,	5,	72,	69,	-63,	-29 ]
+	[ 123, 	5,	94,	60,	-23,	-50 ]
+	[ 230, 	5,	83,	66,	-8, 	-29 ]
+	[ 323, 	5,	32,	79,	-35, 	-51 ]
+	[ 365, 	5,	75,	73,	-68, 	-38 ]
+	[ 454, 	5,	87,	59,	-32, 	-35 ]
+	[ 549, 	5,	65,	71,	0,	-29 ]
+
+}
+spriteset(spriteset_paddles_mail_running_empty, "gfx\paddles\mail_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5,	31,	76,	-33,	-53 ]
+	[ 39,	5,	72,	69,	-63,	-30 ]
+	[ 121, 	5,	94,	60,	-23,	-51 ]
+	[ 225, 	5,	83,	66,	-8, 	-30 ]
+	[ 318, 	5,	32,	79,	-35, 	-51 ]
+	[ 365, 	5,	75,	73,	-68, 	-38 ]
+	[ 450, 	5,	87,	59,	-32, 	-36 ]
+	[ 547, 	5,	65,	71,	0,	-30 ]
+}
+
+spriteset(spriteset_paddles_mail_still_empty, "gfx\paddles\mail_still_empty.png"){
+	
+	[ 5, 	5,	31,	76,	-33,	-53 ]
+	[ 46,	5,	72,	69,	-63,	-30 ]
+	[ 123, 	5,	94,	60,	-23,	-51 ]
+	[ 230, 	5,	83,	66,	-8, 	-30 ]
+	[ 318, 	5,	32,	79,	-35, 	-51 ]
+	[ 365, 	5,	75,	73,	-68, 	-38 ]
+	[ 454, 	5,	87,	59,	-32, 	-36 ]
+	[ 549, 	5,	65,	71,	0,	-30 ]
+}
+
+spriteset(spriteset_paddles_mail_running_full, "gfx\paddles\mail_running_full.png"){
+	
+	[ 5, 	5,	31,	76,	-33,	-52 ]
+	[ 39,	5,	72,	69,	-63,	-29 ]
+	[ 121, 	5,	94,	60,	-23,	-50 ]
+	[ 225, 	5,	83,	66,	-8, 	-29 ]
+	[ 318, 	5,	32,	79,	-35, 	-50 ]
+	[ 365, 	5,	75,	73,	-68, 	-37 ]
+	[ 450, 	5,	87,	59,	-32, 	-35 ]
+	[ 547, 	5,	65,	71,	0,	-29 ]
+}
+
+spriteset(spriteset_paddles_mail_still_full, "gfx\paddles\mail_still_full.png"){
+	
+	[ 5, 	5,	31,	76,	-33,	-53 ]
+	[ 46,	5,	72,	69,	-63,	-29 ]
+	[ 123, 	5,	94,	60,	-23,	-50 ]
+	[ 230, 	5,	83,	66,	-8, 	-29 ]
+	[ 323, 	5,	32,	79,	-35, 	-51 ]
+	[ 365, 	5,	75,	73,	-68, 	-38 ]
+	[ 454, 	5,	87,	59,	-32, 	-35 ]
+	[ 549, 	5,	65,	71,	0,	-29 ]
+
+}
+
+spriteset(spriteset_paddles_buymenu,"gfx\paddles\default_still_empty.png"){
+/*	[ 454,	65,	87,	18,	-100,	-10 ]*/
+	[ 454,	65,	87,	18,	-44,	-10 ]
+}
+
+spriteset(spriteset_paddles_prev,"gfx\paddles\default_still_empty.png"){
+	[ 454,	65,	87,	18,	-44,	-10 ]
+}
+
+spriteset(spriteset_paddles_default_depot,"gfx\paddles\default_still_empty.png"){
+	[ 454,	65,	87,	18,	-44,	-10 ]
+}
+
+spriteset(spriteset_paddles_mail_depot,"gfx\paddles\mail_still_empty.png"){
+	[ 454,	65,	87,	18,	-44,	-10 ]
+}
+		
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_paddles_default_still{
+	loading: [spriteset_paddles_default_still_empty, spriteset_paddles_default_still_full];
+	loaded: [spriteset_paddles_default_still_empty, spriteset_paddles_default_still_full];
+}
+
+spritegroup spritegroup_paddles_default_running{
+	loading: [spriteset_paddles_default_running_empty,spriteset_paddles_default_running_full];
+	loaded: [spriteset_paddles_default_running_empty,spriteset_paddles_default_running_full];
+}
+
+
+spritegroup spritegroup_paddles_mail_still{
+	loading: [spriteset_paddles_mail_still_empty, spriteset_paddles_mail_still_full];
+	loaded: [spriteset_paddles_mail_still_empty, spriteset_paddles_mail_still_full];
+}
+
+spritegroup spritegroup_paddles_mail_running{
+	loading: [spriteset_paddles_mail_running_empty,spriteset_paddles_mail_running_full];
+	loaded: [spriteset_paddles_mail_running_empty,spriteset_paddles_mail_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_paddles_default_move, current_speed) {
+ 	0 :   spritegroup_paddles_default_still; 
+ 	spritegroup_paddles_default_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_paddles_mail_move, current_speed) {
+ 	0 :   spritegroup_paddles_mail_still; 
+ 	spritegroup_paddles_mail_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_paddlescargo, cargo_type_in_veh) {
+ 	return 120;
+ }
+
+switch (FEAT_SHIPS, SELF, switch_paddles_default_depot,extra_callback_info1) {
+	0x10 : spriteset_paddles_default_depot;
+	0x11 : spriteset_paddles_default_depot;
+	0x12 : spriteset_paddles_default_depot;
+	switch_paddles_default_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_paddles_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_paddles_buymenu;
+	0x21 : spriteset_paddles_prev;
+	spriteset_paddles_buymenu;
+}
+
+switch (FEAT_SHIPS, SELF, switch_paddles_mail_depot,extra_callback_info1) {
+	0x10 : spriteset_paddles_mail_depot;
+	0x11 : spriteset_paddles_mail_depot;
+	0x12 : spriteset_paddles_mail_depot;
+	switch_paddles_mail_move;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_paddles) {
+	property {
+		name : string(STR_PADDLES_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1830,05,01);
+		reliability_decay : 15;
+		model_life : 30;
+		vehicle_life : 40;
+		refittable_cargo_classes : bitmask(CC_PASSENGERS, CC_MAIL);
+		loading_speed: 30;
+		cost_factor : 65;
+		running_cost_factor: 105;
+		cargo_age_period: 370;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 20 km/h;
+		misc_flags : bitmask(SHIP_FLAG_2CC);
+		refit_cost : 10;
+		is_refittable : 1;
+		default_cargo_type : PASS;
+		cargo_capacity : 120;
+		sound_effect : SOUND_FACTORY_WHISTLE ;
+	}
+	graphics {
+		purchase: switch_paddles_default_purchase;
+		additional_text: string(STR_PADDLES_BUYMENU);
+		cargo_capacity:switch_paddlescargo;
+		MAIL : switch_paddles_mail_depot;
+		default: switch_paddles_default_depot;
+	}
+}
+
+
+/*Merchantman*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_merch_default_running_empty, "gfx\merch\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_default_still_empty, "gfx\merch\default_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_default_running_full, "gfx\merch\default_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_merch_default_still_full, "gfx\merch\default_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_merch_bulk_running_empty, "gfx\merch\bulk_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_bulk_still_empty, "gfx\merch\bulk_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_bulk_running_full, "gfx\merch\bulk_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_merch_bulk_still_full, "gfx\merch\bulk_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+
+spriteset(spriteset_merch_pass_running_empty, "gfx\merch\pass_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_pass_still_empty, "gfx\merch\pass_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_merch_pass_running_full, "gfx\merch\pass_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_merch_pass_still_full, "gfx\merch\pass_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_merch_buymenu,"gfx\merch\default_still_empty.png"){
+/*	[ 400,	64,	65,	16,	-100,	-10 ]*/
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_prev,"gfx\merch\default_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_default_depot,"gfx\merch\default_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_bulk_depot,"gfx\merch\bulk_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_merch_pass_depot,"gfx\merch\pass_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+		
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_merch_default_still{
+	loading: [spriteset_merch_default_still_empty, spriteset_merch_default_still_full];
+	loaded: [spriteset_merch_default_still_empty, spriteset_merch_default_still_full];
+}
+
+spritegroup spritegroup_merch_default_running{
+	loading: [spriteset_merch_default_running_empty,spriteset_merch_default_running_full];
+	loaded: [spriteset_merch_default_running_empty,spriteset_merch_default_running_full];
+}
+
+
+spritegroup spritegroup_merch_bulk_still{
+	loading: [spriteset_merch_bulk_still_empty, spriteset_merch_bulk_still_full];
+	loaded: [spriteset_merch_bulk_still_empty, spriteset_merch_bulk_still_full];
+}
+
+
+spritegroup spritegroup_merch_bulk_running{
+	loading: [spriteset_merch_bulk_running_empty,spriteset_merch_bulk_running_full];
+	loaded: [spriteset_merch_bulk_running_empty,spriteset_merch_bulk_running_full];
+}
+
+spritegroup spritegroup_merch_pass_still{
+	loading: [spriteset_merch_pass_still_empty, spriteset_merch_pass_still_full];
+	loaded: [spriteset_merch_pass_still_empty, spriteset_merch_pass_still_full];
+}
+
+
+spritegroup spritegroup_merch_pass_running{
+	loading: [spriteset_merch_pass_running_empty,spriteset_merch_pass_running_full];
+	loaded: [spriteset_merch_pass_running_empty,spriteset_merch_pass_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_merch_default_move, current_speed) {
+ 	0 :   spritegroup_merch_default_still; 
+ 	spritegroup_merch_default_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_merch_bulk_move, current_speed) {
+ 	0 :   spritegroup_merch_bulk_still; 
+ 	spritegroup_merch_bulk_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_merch_pass_move, current_speed) {
+ 	0 :   spritegroup_merch_pass_still; 
+ 	spritegroup_merch_pass_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_merchcargo, cargo_type_in_veh) {	
+ 	return 100;
+ }
+
+ switch (FEAT_SHIPS, SELF, switch_merch_default_depot,extra_callback_info1) {
+	0x10 : spriteset_merch_default_depot;
+	0x11 : spriteset_merch_default_depot;
+	0x12 : spriteset_merch_default_depot;
+	switch_merch_default_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_merch_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_merch_bulk_depot;
+	0x11 : spriteset_merch_bulk_depot;
+	0x12 : spriteset_merch_bulk_depot;
+	switch_merch_bulk_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_merch_pass_depot,extra_callback_info1) {
+	0x10 : spriteset_merch_pass_depot;
+	0x11 : spriteset_merch_pass_depot;
+	0x12 : spriteset_merch_pass_depot;
+	switch_merch_pass_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_merch_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_merch_buymenu;
+	0x21 : spriteset_merch_prev;
+	spriteset_merch_buymenu;
+}
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_merch) {
+	property {
+		name : string(STR_MERCH_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1750,07,01);
+		reliability_decay : 12;
+		model_life : 110;
+		vehicle_life : 40;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_BULK);
+		loading_speed: 25;
+		cost_factor : 88;
+		running_cost_factor: 80;
+		cargo_age_period: 555;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 25 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 1.0;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 100;
+		sound_effect : sound("shipsbell.wav");
+	}
+	graphics {
+		purchase: switch_merch_default_purchase;
+		additional_text : string(STR_MERCH_BUYMENU);
+		cargo_capacity : switch_merchcargo;
+		default: switch_merch_default_depot;
+		PASS: switch_merch_pass_depot;
+		COAL : switch_merch_bulk_depot;
+		WOOD : switch_merch_bulk_depot;
+		IORE : switch_merch_bulk_depot;
+		WHEA : switch_merch_bulk_depot;
+		MAIZ : switch_merch_bulk_depot;
+		CORE : switch_merch_bulk_depot;
+		AORE : switch_merch_bulk_depot;
+		CERE : switch_merch_bulk_depot;
+		CLAY : switch_merch_bulk_depot;
+		COPR : switch_merch_bulk_depot;
+		GRVL : switch_merch_bulk_depot;
+		SAND : switch_merch_bulk_depot;
+	}
+}
+
+
+/*Barque*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_barque_default_running_empty, "gfx\barque\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_barque_default_still_empty, "gfx\barque\default_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_barque_default_running_full, "gfx\barque\default_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_barque_default_still_full, "gfx\barque\default_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_barque_bulk_running_empty, "gfx\barque\bulk_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_barque_bulk_still_empty, "gfx\barque\bulk_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_barque_bulk_running_full, "gfx\barque\bulk_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_barque_bulk_still_full, "gfx\barque\bulk_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_barque_pass_running_empty, "gfx\barque\pass_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_barque_pass_still_empty, "gfx\barque\pass_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_barque_pass_running_full, "gfx\barque\pass_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_barque_pass_still_full, "gfx\barque\pass_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_barque_buymenu,"gfx\barque\default_still_empty.png"){
+/*	[ 400,	64,	65,	16,	-100,	-10 ]*/
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_barque_prev,"gfx\barque\default_still_empty.png"){
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_barque_default_depot,"gfx\barque\default_still_empty.png"){
+/*	[ 400,	64,	65,	16,	-100,	-10 ]*/
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_barque_bulk_depot,"gfx\barque\bulk_still_empty.png"){
+/*	[ 400,	64,	65,	16,	-100,	-10 ]*/
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+
+spriteset(spriteset_barque_pass_depot,"gfx\barque\pass_still_empty.png"){
+/*	[ 400,	64,	65,	16,	-100,	-10 ]*/
+	[ 400,	64,	65,	16,	-33,	-10 ]
+}
+	
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_barque_default_still{
+	loading: [spriteset_barque_default_still_empty, spriteset_barque_default_still_full];
+	loaded: [spriteset_barque_default_still_empty, spriteset_barque_default_still_full];
+}
+
+spritegroup spritegroup_barque_default_running{
+	loading: [spriteset_barque_default_running_empty,spriteset_barque_default_running_full];
+	loaded: [spriteset_barque_default_running_empty,spriteset_barque_default_running_full];
+}
+
+spritegroup spritegroup_barque_bulk_still{
+	loading: [spriteset_barque_bulk_still_empty, spriteset_barque_bulk_still_full];
+	loaded: [spriteset_barque_bulk_still_empty, spriteset_barque_bulk_still_full];
+}
+
+spritegroup spritegroup_barque_bulk_running{
+	loading: [spriteset_barque_bulk_running_empty,spriteset_barque_bulk_running_full];
+	loaded: [spriteset_barque_bulk_running_empty,spriteset_barque_bulk_running_full];
+}
+
+spritegroup spritegroup_barque_pass_still{
+	loading: [spriteset_barque_pass_still_empty, spriteset_barque_pass_still_full];
+	loaded: [spriteset_barque_pass_still_empty, spriteset_barque_pass_still_full];
+}
+
+spritegroup spritegroup_barque_pass_running{
+	loading: [spriteset_barque_pass_running_empty,spriteset_barque_pass_running_full];
+	loaded: [spriteset_barque_pass_running_empty,spriteset_barque_pass_running_full];
+}
+
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_barque_default_move, current_speed) {
+ 	0 :   spritegroup_barque_default_still; 
+ 	spritegroup_barque_default_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_barque_bulk_move, current_speed) {
+ 	0 :   spritegroup_barque_bulk_still; 
+ 	spritegroup_barque_bulk_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_barque_pass_move, current_speed) {
+ 	0 :   spritegroup_barque_pass_still; 
+ 	spritegroup_barque_pass_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_barquecargo, cargo_type_in_veh) {
+ 	return 120;
+ }
+
+ switch (FEAT_SHIPS, SELF, switch_barque_default_depot,extra_callback_info1) {
+	0x10 : spriteset_barque_default_depot;
+	0x11 : spriteset_barque_default_depot;
+	0x12 : spriteset_barque_default_depot;
+	switch_barque_default_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_barque_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_barque_bulk_depot;
+	0x11 : spriteset_barque_bulk_depot;
+	0x12 : spriteset_barque_bulk_depot;
+	switch_barque_bulk_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_barque_pass_depot,extra_callback_info1) {
+	0x10 : spriteset_barque_pass_depot;
+	0x11 : spriteset_barque_pass_depot;
+	0x12 : spriteset_barque_pass_depot;
+	switch_barque_pass_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_barque_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_barque_buymenu;
+	0x21 : spriteset_barque_prev;
+	spriteset_barque_buymenu;
+}
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_barque) {
+	property {
+		name : string(STR_BARQUE_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1740,09,01);
+		reliability_decay : 8;
+		model_life : 120;
+		vehicle_life : 40;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_PASSENGERS, CC_MAIL);
+		loading_speed: 20;
+		cost_factor : 82;
+		running_cost_factor: 60;
+		cargo_age_period: 370;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 20 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 1.0;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 120;
+		sound_effect : sound("shipsbell.wav");
+	}
+	graphics {
+		purchase: switch_barque_default_purchase;
+		additional_text: string(STR_BARQUE_BUYMENU);
+		cargo_capacity:switch_barquecargo;
+		default: switch_barque_default_depot;
+		PASS: switch_barque_pass_depot;
+		COAL : switch_barque_bulk_depot;
+		WOOD : switch_barque_bulk_depot;
+		IORE : switch_barque_bulk_depot;
+		WHEA : switch_barque_bulk_depot;
+		MAIZ : switch_barque_bulk_depot;
+		CORE : switch_barque_bulk_depot;
+		AORE : switch_barque_bulk_depot;
+		CERE : switch_barque_bulk_depot;
+		CLAY : switch_barque_bulk_depot;
+		COPR : switch_barque_bulk_depot;
+		GRVL : switch_barque_bulk_depot;
+		SAND : switch_barque_bulk_depot;
+	}
+}
+
+
+/*Brig*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_brig_default_running_empty, "gfx\brig\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_brig_default_still_empty, "gfx\brig\default_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_brig_default_running_full, "gfx\brig\default_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_brig_default_still_full, "gfx\brig\default_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_brig_bulk_running_empty, "gfx\brig\bulk_running_empty.png") {
+
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_brig_bulk_still_empty, "gfx\brig\bulk_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_brig_bulk_running_full, "gfx\brig\bulk_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_brig_bulk_still_full, "gfx\brig\bulk_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_brig_buymenu,"gfx\brig\default_still_empty.png"){
+/*	[ 400,	63,	51,	16,	-100,	-10 ]*/
+	[ 400,	63,	51,	16,	-25,	-10 ]
+}
+
+spriteset(spriteset_brig_prev,"gfx\brig\default_still_empty.png"){
+	[ 400,	63,	51,	16,	-25,	-10 ]
+}
+
+spriteset(spriteset_brig_default_depot,"gfx\brig\default_still_empty.png"){
+/*	[ 400,	63,	51,	16,	-100,	-10 ]*/
+	[ 400,	63,	51,	16,	-25,	-10 ]
+}
+
+spriteset(spriteset_brig_bulk_depot,"gfx\brig\bulk_still_empty.png"){
+/*	[ 400,	63,	51,	16,	-100,	-10 ]*/
+	[ 400,	63,	51,	16,	-25,	-10 ]
+}
+		
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_brig_default_still{
+	loading: [spriteset_brig_default_still_empty, spriteset_brig_default_still_full];
+	loaded: [spriteset_brig_default_still_empty, spriteset_brig_default_still_full];
+}
+
+spritegroup spritegroup_brig_default_running{
+	loading: [spriteset_brig_default_running_empty,spriteset_brig_default_running_full];
+	loaded: [spriteset_brig_default_running_empty,spriteset_brig_default_running_full];
+}
+
+
+spritegroup spritegroup_brig_bulk_still{
+	loading: [spriteset_brig_bulk_still_empty, spriteset_brig_bulk_still_full];
+	loaded: [spriteset_brig_bulk_still_empty, spriteset_brig_bulk_still_full];
+}
+
+spritegroup spritegroup_brig_bulk_running{
+	loading: [spriteset_brig_bulk_running_empty,spriteset_brig_bulk_running_full];
+	loaded: [spriteset_brig_bulk_running_empty,spriteset_brig_bulk_running_full];
+}
+
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_brig_default_move, current_speed) {
+ 	0 :   spritegroup_brig_default_still; 
+ 	spritegroup_brig_default_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_brig_bulk_move, current_speed) {
+ 	0 :   spritegroup_brig_bulk_still; 
+ 	spritegroup_brig_bulk_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_brigcargo, cargo_type_in_veh) {
+ 	return 50;
+ }
+
+
+ switch (FEAT_SHIPS, SELF, switch_brig_default_depot,extra_callback_info1) {
+	0x10 : spriteset_brig_default_depot;
+	0x11 : spriteset_brig_default_depot;
+	0x12 : spriteset_brig_default_depot;
+	switch_brig_default_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_brig_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_brig_bulk_depot;
+	0x11 : spriteset_brig_bulk_depot;
+	0x12 : spriteset_brig_bulk_depot;
+	switch_brig_bulk_move;
+}
+
+
+switch (FEAT_SHIPS, SELF, switch_brig_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_brig_buymenu;
+	0x21 : spriteset_brig_prev;
+	spriteset_brig_buymenu;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_brig) {
+	property {
+		name : string(STR_BRIG_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1700,12,01);
+		reliability_decay : 8;
+		model_life : 160;
+		vehicle_life : 100;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_PASSENGERS, CC_MAIL);
+		loading_speed: 20;
+		cost_factor : 40;
+		running_cost_factor: 30;
+		cargo_age_period: 370;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 20 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 1.0;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 50;
+		sound_effect : sound("shipsbell.wav");
+	}
+	graphics {
+		purchase: switch_brig_default_purchase;
+		additional_text: string(STR_BRIG_BUYMENU);
+		cargo_capacity:switch_brigcargo;
+		default: switch_brig_default_depot;
+		COAL : switch_brig_bulk_depot;
+		WOOD : switch_brig_bulk_depot;
+		IORE : switch_brig_bulk_depot;
+		WHEA : switch_brig_bulk_depot;
+		MAIZ : switch_brig_bulk_depot;
+		CORE : switch_brig_bulk_depot;
+		AORE : switch_brig_bulk_depot;
+		CERE : switch_brig_bulk_depot;
+		CLAY : switch_brig_bulk_depot;
+		COPR : switch_brig_bulk_depot;
+		GRVL : switch_brig_bulk_depot;
+		SAND : switch_brig_bulk_depot;
+	}
+}
+
+
+/*Schooner*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_schon_default_running_empty, "gfx\schon\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_schon_default_still_empty, "gfx\schon\default_still_empty.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-48 ]
+	[ 40,	5,	69,	61,	-57,	-23 ]
+	[ 120,	5,	82,	55,	-35,	-40 ]
+	[ 210,	5,	74,	61,	-12,	-30 ]
+	[ 290,	5,	25,	70,	-12,	-45 ]
+	[ 320,	5,	70,	62,	-58,	-28 ]
+	[ 400,	5,	85,	55,	-42,	-40 ]
+	[ 490,	5,	69,	64,	-15,	-25 ]
+}
+
+spriteset(spriteset_schon_default_running_full, "gfx\schon\default_running_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+}
+
+spriteset(spriteset_schon_default_still_full, "gfx\schon\default_still_full.png"){
+	
+	[ 5,	5,	27,	71,	-14,	-47 ]
+	[ 40,	5,	69,	61,	-57,	-22 ]
+	[ 120,	5,	82,	55,	-35,	-39 ]
+	[ 210,	5,	74,	61,	-12,	-29 ]
+	[ 290,	5,	25,	70,	-12,	-44 ]
+	[ 320,	5,	70,	62,	-58,	-27 ]
+	[ 400,	5,	85,	55,	-42,	-39 ]
+	[ 490,	5,	69,	64,	-15,	-24 ]
+
+}
+
+spriteset(spriteset_schon_buymenu,"gfx\schon\default_still_empty.png"){
+/*	[ 400,	64,	47,	16,	-100,	-10 ]*/
+	[ 400,	64,	47,	16,	-24,	-10 ]
+}
+
+spriteset(spriteset_schon_prev,"gfx\schon\default_still_empty.png"){
+	[ 400,	64,	47,	16,	-24,	-10 ]
+}		
+
+spriteset(spriteset_schon_default_depot,"gfx\schon\default_still_empty.png"){
+	[ 400,	64,	47,	16,	-24,	-10 ]
+}	
+
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_schon_default_still{
+	loading: [spriteset_schon_default_still_empty, spriteset_schon_default_still_full];
+	loaded: [spriteset_schon_default_still_empty, spriteset_schon_default_still_full];
+}
+
+spritegroup spritegroup_schon_default_running{
+	loading: [spriteset_schon_default_running_empty,spriteset_schon_default_running_full];
+	loaded: [spriteset_schon_default_running_empty,spriteset_schon_default_running_full];
+}
+
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_schon_default_move, current_speed) {
+ 	0 :   spritegroup_schon_default_still; 
+ 	spritegroup_schon_default_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_schoncargo, cargo_type_in_veh) {
+ 	PASS :   return 20;
+ 	return 40;
+ }
+ switch (FEAT_SHIPS, SELF, switch_schon_default_depot,extra_callback_info1) {
+	0x10 : spriteset_schon_default_depot;
+	0x11 : spriteset_schon_default_depot;
+	0x12 : spriteset_schon_default_depot;
+	switch_schon_default_move;
+}
+
+
+switch (FEAT_SHIPS, SELF, switch_schon_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_schon_buymenu;
+	0x21 : spriteset_schon_prev;
+	spriteset_schon_buymenu;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_schon) {
+	property {
+		name : string(STR_SCHON_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1700,5,01);
+		reliability_decay : 5;
+		model_life : 160;
+		vehicle_life : 30;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_BULK);
+		loading_speed: 15;
+		cost_factor : 60;
+		running_cost_factor: 25;
+		cargo_age_period: 370;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 25 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 1.0;
+		misc_flags : bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT);
+		refit_cost : 0;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 40;
+		sound_effect : sound("shipsbell.wav");
+	}
+	graphics {
+		purchase: switch_schon_default_purchase;
+		additional_text: string(STR_SCHON_BUYMENU);
+		cargo_capacity:switch_schoncargo;
+		default: switch_schon_default_depot;
+	}
+}
+
+
+/*Windjammer*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_windj_default_running_empty, "gfx\windj\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_windj_default_still_empty, "gfx\windj\default_still_empty.png"){
+	
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_windj_default_running_full, "gfx\windj\default_running_full.png"){
+	
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_windj_default_still_full, "gfx\windj\default_still_full.png"){
+	
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+
+}
+
+spriteset(spriteset_windj_bulk_running_empty, "gfx\windj\bulk_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_windj_bulk_still_empty, "gfx\windj\bulk_still_empty.png"){
+	
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_windj_bulk_running_full, "gfx\windj\bulk_running_full.png"){
+	
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+}
+
+spriteset(spriteset_windj_bulk_still_full, "gfx\windj\bulk_still_full.png"){
+	
+	[ 5, 	5, 	36, 	99, 	-18, 	-60 ]
+	[ 50, 	5, 	89, 	87, 	-58, 	-50 ]
+	[ 150,	5,	115,	74,	-50,	-60 ]
+	[ 275,	5,	93,	86,	-20,	-45 ]
+	[ 375,	5,	38,	99,	-20,	-63 ]
+	[ 425,	5,	93,	86,	-70,	-43 ]
+	[ 525,	5,	115,	74,	-60,	-60 ]
+	[ 650,	5,	90,	87,	-35,	-50 ]
+
+}
+
+spriteset(spriteset_windj_buymenu,"gfx\windj\default_still_empty.png"){
+/*	[ 525,	84,	93,	15,	-100,	-10 ]*/
+	[ 525,	84,	93,	15,	-46,	-10 ]
+}
+
+spriteset(spriteset_windj_prev,"gfx\windj\default_still_empty.png"){
+	[ 525,	84,	93,	15,	-46,	-10 ]
+}
+
+spriteset(spriteset_windj_default_depot,"gfx\windj\default_still_empty.png"){
+/*	[ 525,	84,	93,	15,	-100,	-10 ]*/
+	[ 525,	84,	93,	15,	-46,	-10 ]
+}
+
+spriteset(spriteset_windj_bulk_depot,"gfx\windj\bulk_still_empty.png"){
+/*	[ 525,	84,	93,	15,	-100,	-10 ]*/
+	[ 525,	84,	93,	15,	-46,	-10 ]
+}
+	
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_windj_default_still{
+	loading: [spriteset_windj_default_still_empty, spriteset_windj_default_still_full];
+	loaded: [spriteset_windj_default_still_empty, spriteset_windj_default_still_full];
+}
+
+spritegroup spritegroup_windj_default_running{
+	loading: [spriteset_windj_default_running_empty,spriteset_windj_default_running_full];
+	loaded: [spriteset_windj_default_running_empty,spriteset_windj_default_running_full];
+}
+
+
+spritegroup spritegroup_windj_bulk_still{
+	loading: [spriteset_windj_bulk_still_empty, spriteset_windj_bulk_still_full];
+	loaded: [spriteset_windj_bulk_still_empty, spriteset_windj_bulk_still_full];
+}
+
+spritegroup spritegroup_windj_bulk_running{
+	loading: [spriteset_windj_bulk_running_empty,spriteset_windj_bulk_running_full];
+	loaded: [spriteset_windj_bulk_running_empty,spriteset_windj_bulk_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_windj_default_move, current_speed) {
+ 	0 :   spritegroup_windj_default_still; 
+ 	spritegroup_windj_default_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_windj_bulk_move, current_speed) {
+ 	0 :   spritegroup_windj_bulk_still; 
+ 	spritegroup_windj_bulk_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_windjcargo, cargo_type_in_veh) {
+	MAIL : 200;
+ 	return 240;
+ }
+
+ switch (FEAT_SHIPS, SELF, switch_windj_default_depot,extra_callback_info1) {
+	0x10 : spriteset_windj_default_depot;
+	0x11 : spriteset_windj_default_depot;
+	0x12 : spriteset_windj_default_depot;
+	switch_windj_default_move;
+}
+
+ switch (FEAT_SHIPS, SELF, switch_windj_bulk_depot,extra_callback_info1) {
+	0x10 : spriteset_windj_bulk_depot;
+	0x11 : spriteset_windj_bulk_depot;
+	0x12 : spriteset_windj_bulk_depot;
+	switch_windj_bulk_move;
+}
+
+
+switch (FEAT_SHIPS, SELF, switch_windj_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_windj_buymenu;
+	0x21 : spriteset_windj_prev;
+	spriteset_windj_buymenu;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_windj) {
+	property {
+		name : string(STR_WINDJ_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1870,2,01);
+		reliability_decay : 10;
+		model_life : 40;
+		vehicle_life : 30;
+		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
+		non_refittable_cargo_classes : bitmask(CC_PASSENGERS, CC_MAIL);
+		loading_speed: 10;
+		cost_factor : 170;
+		running_cost_factor: 220;
+		cargo_age_period: 740;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		speed : 36 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 0.33;
+		misc_flags : bitmask(SHIP_FLAG_2CC);
+		refit_cost : 20;
+		is_refittable : 1;
+		default_cargo_type : GOOD;
+		cargo_capacity : 240;
+		sound_effect : sound("shipsbell.wav");
+	}
+	graphics {
+
+		purchase: switch_windj_default_purchase;
+		additional_text: string(STR_WINDJ_BUYMENU);
+		cargo_capacity:switch_windjcargo;
+		default: switch_windj_default_depot;
+		COAL : switch_windj_bulk_depot;
+		WOOD : switch_windj_bulk_depot;
+		IORE : switch_windj_bulk_depot;
+		WHEA : switch_windj_bulk_depot;
+		MAIZ : switch_windj_bulk_depot;
+		CORE : switch_windj_bulk_depot;
+		AORE : switch_windj_bulk_depot;
+		CERE : switch_windj_bulk_depot;
+		CLAY : switch_windj_bulk_depot;
+		COPR : switch_windj_bulk_depot;
+		GRVL : switch_windj_bulk_depot;
+		SAND : switch_windj_bulk_depot;
+	}
+}
+
+/*Steamship*/
+/*first, define spritesets to be referenced by spritegroups */
+
+spriteset(spriteset_steam_default_running_empty, "gfx\steam\default_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_default_still_empty, "gfx\steam\default_still_empty.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_default_running_full, "gfx\steam\default_running_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_default_still_full, "gfx\steam\default_still_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+
+}
+
+spriteset(spriteset_steam_mail_running_empty, "gfx\steam\mail_running_empty.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_mail_still_empty, "gfx\steam\mail_still_empty.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_mail_running_full, "gfx\steam\mail_running_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+}
+
+spriteset(spriteset_steam_mail_still_full, "gfx\steam\mail_still_full.png"){
+	
+	[ 5,	5,	29,	105,	-12,	-50 ]
+	[ 40,	5,	114,	91,	-75,	-40 ]
+	[ 160, 	5, 	150, 	51, 	-75, 	-30 ]
+	[ 315, 	5, 	115, 	91, 	-40, 	-40 ]
+	[ 441, 	5, 	28, 	105,	-12, 	-55 ]
+	[ 475, 	5, 	115, 	91, 	-85, 	-38 ]
+	[ 600, 	5, 	150, 	51, 	-80,	-30 ]
+	[ 755,	5, 	115, 	91, 	-30,	-35 ]
+
+}
+
+spriteset(spriteset_steam_buymenu,"gfx\steam\default_still_empty.png"){
+/*	[ 600,	68,	75,	26,	-100,	-10 ]*/
+	[ 600,	68,	75,	26,	-37,	-10 ]
+}
+
+spriteset(spriteset_steam_prev,"gfx\steam\default_still_empty.png"){
+	[ 600,	68,	75,	26,	-37,	-10 ]
+}
+
+spriteset(spriteset_steam_default_depot,"gfx\steam\default_still_empty.png"){
+/*	[ 600,	68,	75,	26,	-100,	-10 ]*/
+	[ 600,	68,	75,	26,	-37,	-10 ]
+}
+
+spriteset(spriteset_steam_mail_depot,"gfx\steam\mail_still_empty.png"){
+/*	[ 600,	68,	75,	26,	-100,	-10 ]*/
+	[ 600,	68,	75,	26,	-37,	-10 ]
+}		
+/*next define spritegroups for items*/
+
+spritegroup spritegroup_steam_default_still{
+	loading: [spriteset_steam_default_still_empty, spriteset_steam_default_still_full];
+	loaded: [spriteset_steam_default_still_empty, spriteset_steam_default_still_full];
+}
+
+spritegroup spritegroup_steam_default_running{
+	loading: [spriteset_steam_default_running_empty,spriteset_steam_default_running_full];
+	loaded: [spriteset_steam_default_running_empty,spriteset_steam_default_running_full];
+}
+
+spritegroup spritegroup_steam_mail_still{
+	loading: [spriteset_steam_mail_still_empty, spriteset_steam_mail_still_full];
+	loaded: [spriteset_steam_mail_still_empty, spriteset_steam_mail_still_full];
+}
+
+spritegroup spritegroup_steam_mail_running{
+	loading: [spriteset_steam_mail_running_empty,spriteset_steam_mail_running_full];
+	loaded: [spriteset_steam_mail_running_empty,spriteset_steam_mail_running_full];
+}
+
+/*switches*/
+ switch (FEAT_SHIPS, SELF , switch_steam_default_move, current_speed) {
+ 	0 :   spritegroup_steam_default_still; 
+ 	spritegroup_steam_default_running;       
+ }
+
+
+ switch (FEAT_SHIPS, SELF , switch_steam_mail_move, current_speed) {
+ 	0 :   spritegroup_steam_mail_still; 
+ 	spritegroup_steam_mail_running;       
+ }
+
+ switch (FEAT_SHIPS, SELF , switch_steamcargo, cargo_type_in_veh) {
+ 	PASS :   return 240;
+	MAIL :   return 200;
+ 	return 200;
+}
+
+
+switch (FEAT_SHIPS, SELF, switch_steam_default_depot,extra_callback_info1) {
+	0x10 : spriteset_steam_default_depot;
+	0x11 : spriteset_steam_default_depot;
+	0x12 : spriteset_steam_default_depot;
+	switch_steam_default_move;
+}
+
+switch (FEAT_SHIPS, SELF, switch_steam_default_purchase,extra_callback_info1) {
+	0x20 : spriteset_steam_buymenu;
+	0x21 : spriteset_steam_prev;
+	spriteset_steam_buymenu;
+}
+
+switch (FEAT_SHIPS, SELF, switch_steam_mail_depot,extra_callback_info1) {
+	0x10 : spriteset_steam_mail_depot;
+	0x11 : spriteset_steam_mail_depot;
+	0x12 : spriteset_steam_mail_depot;
+	switch_steam_mail_move;
+}
+
+/*next define item properties*/
+
+//common vehicle properties
+item (FEAT_SHIPS , item_steam) {
+	property {
+		name : string(STR_STEAM_NAME);
+		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
+		introduction_date : date(1850,4,01);
+		reliability_decay : 10;
+		model_life : 60;
+		speed : 32 km/h;
+		ocean_speed_fraction: 1.0;
+		canal_speed_fraction: 0.33;
+		vehicle_life : 40;
+		refittable_cargo_classes : bitmask(CC_PASSENGERS, CC_MAIL);
+		loading_speed: 5;
+		cost_factor : 200;
+		running_cost_factor: 200;
+		cargo_age_period: 740;
+
+//ship specific properties
+
+		sprite_id : SPRITE_ID_NEW_SHIP;
+		misc_flags : bitmask(SHIP_FLAG_2CC);
+		refit_cost : 20;
+		is_refittable : 1;
+		default_cargo_type : PASS;
+		cargo_capacity : 240;
+		sound_effect : SOUND_FACTORY_WHISTLE;
+	}
+	graphics {
+		purchase: switch_steam_default_purchase;
+		additional_text: string(STR_STEAM_BUYMENU);
+		cargo_capacity:switch_steamcargo;
+		default: switch_steam_default_depot;
+		MAIL: switch_steam_mail_depot;
+		
+	}
+}
