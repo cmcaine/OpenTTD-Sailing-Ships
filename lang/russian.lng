@@ -11,10 +11,14 @@ STR_PARAM_NAME_PURCHASE_COST    	:Стоимость покупки
 STR_PARAM_DESC_PURCHASE_COST    	:Используйте эту опцию, чтобы изменить стоимость покупки кораблей из этого набора.
 STR_PARAM_NAME_RUNNING_COST     	:Стоимость обслуживания
 STR_PARAM_DESC_RUNNING_COST     	:Используйте эту опцию, чтобы изменить стоимость обслуживания кораблей из этого набора.
+STR_PARAM_NAME_INTRODUCTION_DATE	:Время появления кораблей
+STR_PARAM_DESC_INTRODUCTION_DATE	:Используйте эту опцию, чтобы определить, когда корабли будут появляться в меню покупки
 
 STR_PARAM_COST_H               		:Половинная
 STR_PARAM_COST_N               		:Нормальная
 STR_PARAM_COST_D               		:Двойная
+STR_PARAM_INTRODUCTION_DATE_H		:Историческое
+STR_PARAM_INTRODUCTION_DATE_B		:Сбалансированное
 
 #Names
 STR_CLIPPER_NAME 	:Клипер
