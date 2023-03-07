@@ -9,52 +9,52 @@ grf {
 	param {
         param_purchase_cost {
             type: int;
-            min_value: 1;
-            max_value: 3;
-            def_value: 2;
+            min_value: 0;
+            max_value: 2;
+            def_value: 0;
             name: string(STR_PARAM_NAME_PURCHASE_COST);
             desc: string(STR_PARAM_DESC_PURCHASE_COST);
             names: {
                         1: string(STR_PARAM_COST_H);
-                        2: string(STR_PARAM_COST_N);
-                        3: string(STR_PARAM_COST_D);
+                        0: string(STR_PARAM_COST_N);
+                        2: string(STR_PARAM_COST_D);
             };
         }
     }
     param {
         param_running_cost {
             type: int;
-            min_value: 1;
-            max_value: 3;
-            def_value: 2;
+            min_value: 0;
+            max_value: 2;
+            def_value: 0;
             name: string(STR_PARAM_NAME_RUNNING_COST);
             desc: string(STR_PARAM_DESC_RUNNING_COST);
             names: {
                         1: string(STR_PARAM_COST_H);
-                        2: string(STR_PARAM_COST_N);
-                        3: string(STR_PARAM_COST_D);
+                        0: string(STR_PARAM_COST_N);
+                        2: string(STR_PARAM_COST_D);
             };
         }
     }
-	param {
+    param {
         param_introduction_date {
             type: int;
-            min_value: 1;
-            max_value: 2;
-            def_value: 1;
+            min_value: 0;
+            max_value: 1;
+            def_value: 0;
             name: string(STR_PARAM_NAME_INTRODUCTION_DATE);
             desc: string(STR_PARAM_DESC_INTRODUCTION_DATE);
             names: {
-                        1: string(STR_PARAM_INTRODUCTION_DATE_H);
-                        2: string(STR_PARAM_INTRODUCTION_DATE_B);
+                        0: string(STR_PARAM_INTRODUCTION_DATE_H);
+                        1: string(STR_PARAM_INTRODUCTION_DATE_B);
             };
         }
     }
 }
 
 basecost {
-    PR_BUILD_VEHICLE_SHIP: param_purchase_cost - 2;
-    PR_RUNNING_SHIP: param_running_cost - 2;
+    PR_BUILD_VEHICLE_SHIP: (param_purchase_cost==0) ? 0 : ((param_purchase_cost==1) ? -1 : 1);
+    PR_RUNNING_SHIP: (param_running_cost==0) ? 0 : ((param_running_cost==1) ? -1 : 1);
 }
 
 /*Cargo table for use with spritesets*/
@@ -342,7 +342,7 @@ item (FEAT_SHIPS , item_clipper) {
 	property {
 		name : string(STR_CLIPPER_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1820,03,01) : date(1820,03,01);
+		introduction_date : (param_introduction_date==0) ? date(1820,03,01) : date(1820,03,01);
 		reliability_decay : 15;
 		model_life : 65;
 		vehicle_life : 20;
@@ -571,7 +571,7 @@ item (FEAT_SHIPS , item_paddles) {
 	property {
 		name : string(STR_PADDLES_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1830,05,01) : date(1830,05,01);
+		introduction_date : (param_introduction_date==0) ? date(1830,05,01) : date(1830,05,01);
 		reliability_decay : 15;
 		model_life : 30;
 		vehicle_life : 40;
@@ -867,7 +867,7 @@ item (FEAT_SHIPS , item_merch) {
 	property {
 		name : string(STR_MERCH_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1750,07,01) : date(1750,07,01);
+		introduction_date : (param_introduction_date==0) ? date(1750,07,01) : date(1750,07,01);
 		reliability_decay : 12;
 		model_life : 110;
 		vehicle_life : 40;
@@ -1173,12 +1173,12 @@ item (FEAT_SHIPS , item_barque) {
 	property {
 		name : string(STR_BARQUE_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1790,09,01) : date(1740,09,01);
+		introduction_date : (param_introduction_date==0) ? date(1790,09,01) : date(1740,09,01);
 		reliability_decay : 8;
 		model_life : 120;
 		vehicle_life : 40;
 		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
-		non_refittable_cargo_classes : (param_introduction_date==1) ? 0 : bitmask(CC_PASSENGERS, CC_MAIL);
+		non_refittable_cargo_classes : (param_introduction_date==0) ? 0 : bitmask(CC_PASSENGERS, CC_MAIL);
 		loading_speed: 20;
 		cost_factor : 82 / 2;
 		running_cost_factor: 60;
@@ -1408,12 +1408,12 @@ item (FEAT_SHIPS , item_brig) {
 	property {
 		name : string(STR_BRIG_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1700,12,01) : date(1700,12,01);
+		introduction_date : (param_introduction_date==0) ? date(1700,12,01) : date(1700,12,01);
 		reliability_decay : 8;
 		model_life : 160;
 		vehicle_life : 40;
 		refittable_cargo_classes : ALL_NORMAL_CARGO_CLASSES;
-		non_refittable_cargo_classes : (param_introduction_date==1) ? 0 : bitmask(CC_PASSENGERS, CC_MAIL);
+		non_refittable_cargo_classes : (param_introduction_date==0) ? 0 : bitmask(CC_PASSENGERS, CC_MAIL);
 		loading_speed: 20;
 		cost_factor : 40 / 2;
 		running_cost_factor: 30;
@@ -1562,7 +1562,7 @@ item (FEAT_SHIPS , item_schon) {
 	property {
 		name : string(STR_SCHON_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1800,5,01) : date(1700,5,01);
+		introduction_date : (param_introduction_date==0) ? date(1800,5,01) : date(1700,5,01);
 		reliability_decay : 5;
 		model_life : 160;
 		vehicle_life : 30;
@@ -1783,7 +1783,7 @@ item (FEAT_SHIPS , item_windj) {
 	property {
 		name : string(STR_WINDJ_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1870,2,01) : date(1870,2,01);
+		introduction_date : (param_introduction_date==0) ? date(1870,2,01) : date(1870,2,01);
 		reliability_decay : 10;
 		model_life : 40;
 		vehicle_life : 30;
@@ -2015,7 +2015,7 @@ item (FEAT_SHIPS , item_steam) {
 	property {
 		name : string(STR_STEAM_NAME);
 		climates_available : ALL_CLIMATES & ~bitmask(CLIMATE_TOYLAND);
-		introduction_date : (param_introduction_date==1) ? date(1850,4,01) : date(1850,4,01);
+		introduction_date : (param_introduction_date==0) ? date(1850,4,01) : date(1850,4,01);
 		reliability_decay : 10;
 		model_life : 60;
 		speed : 32 km/h;
