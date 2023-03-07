@@ -1,0 +1,27 @@
+##grflangid 0x2f
+
+#Grf parameter strings
+STR_GRF_NAME : {TITLE} {VERSION}
+STR_GRF_DESCRIPTION : Seil- og dampdrevne skip for OTTD {} {COPYRIGHT}J Mitchell 2012
+
+#Names
+STR_CLIPPER_NAME 	:            Clipper
+STR_PADDLES_NAME 	:            Hjuldamper
+STR_MERCH_NAME		:            Koffard
+STR_BARQUE_NAME		:            Bark
+STR_BRIG_NAME		:            Brigg
+STR_SCHON_NAME		:            Skonnert
+STR_STEAM_NAME		:            Dampskip
+STR_WINDJ_NAME		:            Fullrigger
+STR_KETCH_NAME		:            Galeas
+
+#Buy menu
+STR_CLIPPER_BUYMENU :{BLACK}Framdrift: {GOLD}Tremastet skip med full seilrigg
+STR_PADDLES_BUYMENU :{BLACK}Framdrift: {GOLD}Tremastet bark med dampdrevne skovlhjul
+STR_MERCH_BUYMENU :{BLACK}Framdrift: {GOLD}Tremastet skip med full seilrigg
+STR_BARQUE_BUYMENU :{BLACK}Framdrift: {GOLD}Tremastet skip med gaffelseil bak
+STR_BRIG_BUYMENU :{BLACK}Framdrift: {GOLD}Tomastet skip med full seilrigg
+STR_SCHON_BUYMENU :{BLACK}Framdrift: {GOLD}Tomastet skip med sneiseil
+STR_STEAM_BUYMENU :{BLACK}Framdrift: {GOLD}Tre fullriggede master, en med sneiseil, dampdrevet propell
+STR_WINDJ_BUYMENU :{BLACK}Framdrift: {GOLD}Firemastet skip med full seilrigg
+STR_KETCH_BUYMENU :{BLACK}Framdrift: {GOLD}Tomastet skip med gaffelrigg
