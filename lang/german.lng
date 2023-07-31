@@ -1,8 +1,8 @@
 ##grflangid 0x02
 
 #Grf parameter strings
-STR_GRF_NAME : {TITLE} {VERSION}
-STR_GRF_DESCRIPTION : Wind und dampfgetriebenen Schiffe für OTTD {} {COPYRIGHT}J Mitchell 2012
+STR_GRF_NAME :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :Wind und dampfgetriebenen Schiffe für OTTD {} {COPYRIGHT}J Mitchell 2012
 
 #Names
 STR_CLIPPER_NAME 	:            Clipper

@@ -1,8 +1,8 @@
 ##grflangid 0x2f
 
 #Grf parameter strings
-STR_GRF_NAME : {TITLE} {VERSION}
-STR_GRF_DESCRIPTION : Seil- og dampdrevne skip for OTTD {} {COPYRIGHT}J Mitchell 2012
+STR_GRF_NAME :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :Seil- og dampdrevne skip for OTTD {} {COPYRIGHT}J Mitchell 2012
 
 #Names
 STR_CLIPPER_NAME 	:            Clipper
