@@ -109,6 +109,8 @@ http://www.tt-forums.net/viewtopic.php?f=26&t=49040
 
 v 0.73
 - added norwegian bokmal translation by leifbk
+- changed default parameters for all options to be numerically 0 to workaround [OpenTTD#10549](https://github.com/OpenTTD/OpenTTD/issues/10549)
+  - this makes upgrading from v0.62 (the last BaNaNaS release) easier and upgrading from version 0.7 or 0.72 slightly less nice (those users will have to fix the GRF parameters)
 
 [v 0.72 by sevenfm][v0.72]
 - added option to have historical or balanced ship introduction dates
