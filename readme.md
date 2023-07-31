@@ -110,7 +110,7 @@ http://www.tt-forums.net/viewtopic.php?f=26&t=49040
 
 ## Changelog
 
-v 0.73
+v 0.73 by cmcaine
 - added norwegian bokmal translation by leifbk
 - changed default parameters for all options to be numerically 0 to workaround [OpenTTD#10549](https://github.com/OpenTTD/OpenTTD/issues/10549)
   - this makes upgrading from v0.62 (the last BaNaNaS release) easier and upgrading from version 0.7 or 0.72 slightly less nice (those users will have to fix the GRF parameters)
