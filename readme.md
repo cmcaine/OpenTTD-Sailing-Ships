@@ -1,13 +1,34 @@
 # Sailing ships by James Mitchell (Mouse)
+Copyright J Mitchell 2012.
 
-Wind and steam powered ships from 1700 1920 for OpenTTD. Copyright J Mitchell 2012.
-
-Refit-at-station support, Russian translation, rebalancing to match SQUID ships and some other changes by sevenfm.  
-Norwegian Bokmal translation by leifbk.  
-Git repo and new BaNaNaS release by cmcaine. 
+A sailing ship set for OpenTTD featuring 8 wind and steam powered ships introduced between 1700 and 1920.
 
 [Forum thread](https://www.tt-forums.net/viewtopic.php?f=26&t=49040)  
 [Source code](https://github.com/cmcaine/OpenTTD-Sailing-Ships/)
+
+Want more ships? The ships in this GRF are balanced with the *SQUID ate FISH* set (which means they're also balanced with *SHARK ate SQUID ate FISH*).
+
+- [SHARK ate SQUID ate FISH](https://www.tt-forums.net/viewtopic.php?t=89338) (continuation of SQUID with a few more ships)
+  - 70(!) ships 1850-2008
+- [SQUID ate FISH](https://www.tt-forums.net/viewtopic.php?t=71080)
+  - 25 ships from 1860-1985
+
+## Credits
+
+Original code and sprites by James Mitchell.
+
+sevenfm:
+- refit-at-station support
+- Russian translation
+- rebalancing to match SQUID ships
+- and more!
+
+leifbk:
+- Norwegian Bokmål translation
+
+cmcaine:
+- git repo
+- BaNaNaS release
 
 ## Ship catalogue
 
@@ -117,7 +138,7 @@ v 0.73 by cmcaine
 
 [v 0.72 by sevenfm][v0.72]
 - added option to have historical or balanced ship introduction dates
-  -  Only 2 ships are affected - Barque and Schooner, with historical dates they appear in 1790 and 1800, with balanced dates in 1740 and 1700, which makes early game in 1700s less boring
+  - Only 2 ships are affected - Barque and Schooner, with historical dates they appear in 1790 and 1800, with balanced dates in 1740 and 1700, which makes early game in 1700s less boring
   - historical option also allows passengers and mail cargo for Brig and Barque as otherwise player will have no pass/mail sea transportation before 1800 when Schooner arrives
 
 [v 0.7 by sevenfm][v0.7]:
