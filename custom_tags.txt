@@ -1,2 +1,2 @@
-TITLE :Sailing Ships (community tweaks)
+TITLE :Sailing Ships (community)
 VERSION :0.73
