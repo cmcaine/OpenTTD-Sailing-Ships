@@ -1,2 +1,2 @@
 TITLE :Sailing Ships (tweaked)
-VERSION :0.72
+VERSION :0.73
