@@ -7,49 +7,49 @@ grf {
 	url : string(STR_GRF_URL);
 
 	param {
-        param_purchase_cost {
-            type: int;
-            min_value: 0;
-            max_value: 2;
-            def_value: 0;
-            name: string(STR_PARAM_NAME_PURCHASE_COST);
-            desc: string(STR_PARAM_DESC_PURCHASE_COST);
-            names: {
-                        1: string(STR_PARAM_COST_H);
-                        0: string(STR_PARAM_COST_N);
-                        2: string(STR_PARAM_COST_D);
-            };
-        }
-    }
-    param {
-        param_running_cost {
-            type: int;
-            min_value: 0;
-            max_value: 2;
-            def_value: 0;
-            name: string(STR_PARAM_NAME_RUNNING_COST);
-            desc: string(STR_PARAM_DESC_RUNNING_COST);
-            names: {
-                        1: string(STR_PARAM_COST_H);
-                        0: string(STR_PARAM_COST_N);
-                        2: string(STR_PARAM_COST_D);
-            };
-        }
-    }
-    param {
-        param_introduction_date {
-            type: int;
-            min_value: 0;
-            max_value: 1;
-            def_value: 0;
-            name: string(STR_PARAM_NAME_INTRODUCTION_DATE);
-            desc: string(STR_PARAM_DESC_INTRODUCTION_DATE);
-            names: {
-                        0: string(STR_PARAM_INTRODUCTION_DATE_H);
-                        1: string(STR_PARAM_INTRODUCTION_DATE_B);
-            };
-        }
-    }
+	    param_purchase_cost {
+	        type: int;
+	        min_value: 0;
+	        max_value: 2;
+	        def_value: 0;
+	        name: string(STR_PARAM_NAME_PURCHASE_COST);
+	        desc: string(STR_PARAM_DESC_PURCHASE_COST);
+	        names: {
+	                    1: string(STR_PARAM_COST_H);
+	                    0: string(STR_PARAM_COST_N);
+	                    2: string(STR_PARAM_COST_D);
+	        };
+	    }
+	}
+	param {
+	    param_running_cost {
+	        type: int;
+	        min_value: 0;
+	        max_value: 2;
+	        def_value: 0;
+	        name: string(STR_PARAM_NAME_RUNNING_COST);
+	        desc: string(STR_PARAM_DESC_RUNNING_COST);
+	        names: {
+	                    1: string(STR_PARAM_COST_H);
+	                    0: string(STR_PARAM_COST_N);
+	                    2: string(STR_PARAM_COST_D);
+	        };
+	    }
+	}
+	param {
+	    param_introduction_date {
+	        type: int;
+	        min_value: 0;
+	        max_value: 1;
+	        def_value: 0;
+	        name: string(STR_PARAM_NAME_INTRODUCTION_DATE);
+	        desc: string(STR_PARAM_DESC_INTRODUCTION_DATE);
+	        names: {
+	                    0: string(STR_PARAM_INTRODUCTION_DATE_H);
+	                    1: string(STR_PARAM_INTRODUCTION_DATE_B);
+	        };
+	    }
+	}
 }
 
 basecost {
