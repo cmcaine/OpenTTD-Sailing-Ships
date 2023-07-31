@@ -1,4 +1,3 @@
 venv
 .nmlcache
-ss.grf
-ss_community.grf
+build/
