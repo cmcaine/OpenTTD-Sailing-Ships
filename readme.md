@@ -1,10 +1,13 @@
 # Sailing ships by James Mitchell (Mouse)
 
-Wind and steam powered ships for OpenTTD. Copyright J Mitchell 2012.
+Wind and steam powered ships from 1700 1920 for OpenTTD. Copyright J Mitchell 2012.
 
-Refit-at-station support, Russian translation, rebalancing to match SQUID ships and some other changes by sevenfm.
-Norwegian Bokmal translation by leifbk.
+Refit-at-station support, Russian translation, rebalancing to match SQUID ships and some other changes by sevenfm.  
+Norwegian Bokmal translation by leifbk.  
 Git repo and new BaNaNaS release by cmcaine. 
+
+[Forum thread](https://www.tt-forums.net/viewtopic.php?f=26&t=49040)  
+[Source code](https://github.com/cmcaine/OpenTTD-Sailing-Ships/)
 
 ## Ship catalogue
 
